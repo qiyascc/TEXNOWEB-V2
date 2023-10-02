@@ -48,9 +48,11 @@ class FooterElement extends HTMLElement {
                     <li><a class="text-decoration-none footer_link_color" href="#">Behance</a></li>
                 </ul>
             </div>
+            <hr class="hr hr-blurry" style="width:86%;">
         </div>
+        
         <div class="row justify-content-center text-center mt-4 medium_texno_text_for_footer_copyright_text">
-            <div class="col-12">
+            <div class="col-12"">
                 <p class="footer_copyright_text_color">@2023 TEXNOPARK - Bütün hüquqlar qorunur.</p>
             </div>
         </div>
