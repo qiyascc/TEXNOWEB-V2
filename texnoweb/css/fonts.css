@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter/static/Inter-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter/static/Inter-SemiBold.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter/static/Inter-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.medium_texno_text_for_up_navbar {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.semibold_texno_text_down_navbar {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.bold_texno_text_footer {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.semibold_texno_text_footer {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.medium_texno_text_for_footer_copyright_text {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}

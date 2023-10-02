@@ -1,0 +1,48 @@
+:root {
+    --main-color-texnopark: #FFFFFF;
+    --navbar_up_text: #686868;
+    --navbar_down_text: #666666;
+    --texno_color: #4764BF;
+    --register_button_hover: #283E85;
+    --footer_text_link_color: #888888;
+    --footer_copyright_text: #BBBBBB;
+    
+}
+
+body {
+    background-color: var(--main-color-texnopark);
+}
+.texnopark_white_text {
+    color: var(--main-color-texnopark);
+}
+
+.texnopark_main_background_color {
+    background-color: var(--texno_color);
+}
+
+/* navbar */
+.navbar_up_text_color {
+    color: var(--navbar_up_text);
+}
+
+.navbar_down_text_color {
+    color: var(--navbar_down_text);
+}
+
+.register_button_navbar:hover {
+    background-color: var(--register_button_hover);
+    color: var(--main-color-texnopark);
+}
+
+.register_button_navbar:focus {
+    background-color: var(--register_button_hover);
+    color: var(--main-color-texnopark);
+}
+.footer_link_color {
+    color: var(--footer_text_link_color);
+}
+
+.footer_copyright_text_color {
+    color: var(--footer_copyright_text);
+}
+

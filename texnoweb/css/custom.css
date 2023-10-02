@@ -1,0 +1,16 @@
+.navbar-brand img {
+    width: 6vw;
+    max-width: 95%;
+    height: auto;
+}
+
+.register_button_navbar:hover {
+    border-radius: 0.375rem;
+}
+
+
+.footer-brand {
+    width: 6vw;
+    max-width: 95%;
+    height: auto;
+}
