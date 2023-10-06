@@ -4,9 +4,11 @@
     --navbar_down_text: #666666;
     --texno_color: #4764BF;
     --register_button_hover: #283E85;
-    --footer_text_link_color: #888888;
-    --footer_copyright_text: #BBBBBB;
-    
+    --texno-gray-color: #888888;
+    --copyright_and_datetime: #BBBBBB;
+    --texno_gray_2: #333333;
+    --texno_blue_3: #3DB2BF;
+    --texno_blue_3_dark_version: #197d88;
 }
 
 body {
@@ -19,8 +21,6 @@ body {
 .texnopark_main_background_color {
     background-color: var(--texno_color);
 }
-
-/* navbar */
 .navbar_up_text_color {
     color: var(--navbar_up_text);
 }
@@ -39,10 +39,38 @@ body {
     color: var(--main-color-texnopark);
 }
 .footer_link_color {
-    color: var(--footer_text_link_color);
+    color: var(--texno-gray-color);
 }
 
-.footer_copyright_text_color {
-    color: var(--footer_copyright_text);
+.copyright_and_datetime_color {
+    color: var(--copyright_and_datetime);
 }
-
+.texno_banner_text_color {
+    color: var(--texno_color);
+}
+.contest_title_color {
+    color: var(--texno-gray-color);
+}
+.news_title_color {
+    color: var(--texno_gray_2);
+}
+.news_description_color {
+    color: var(--texno-gray-color);
+}
+.see_more_color {
+    color: var(--texno_blue_3);
+}
+.news_date_color {
+    color: var(--copyright_and_datetime);
+}
+.projects_photo_button {
+    background-color: var(--texno_blue_3);
+    color: var(--main-color-texnopark);
+}
+.projects_photo_button:hover {
+    background-color: var(--texno_blue_3_dark_version);
+    color: var(--main-color-texnopark);
+}
+.projects_item_description_text_color {
+    color: var(--texno-gray-color);
+}

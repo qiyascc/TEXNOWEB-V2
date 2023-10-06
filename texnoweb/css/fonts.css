@@ -1,20 +1,20 @@
 @font-face {
     font-family: 'Inter';
-    src: url('/fonts/Inter/static/Inter-Medium.ttf') format('truetype');
+    src: url('../fonts/Inter/static/Inter-Medium.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Inter';
-    src: url('/fonts/Inter/static/Inter-SemiBold.ttf') format('truetype');
+    src: url('../fonts/Inter/static/Inter-SemiBold.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Inter';
-    src: url('/fonts/Inter/static/Inter-Bold.ttf') format('truetype');
+    src: url('../fonts/Inter/static/Inter-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
@@ -48,4 +48,116 @@
     font-family: 'Inter', sans-serif;
     font-weight: normal;
     font-size: 14px;
+}
+
+.semibold_font_for_banner_text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.semibold_font_for_banner_text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 2vw;
+}
+
+@media (max-width: 767px) {
+    .semibold_font_for_banner_text {
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 5vw;
+    }
+}
+
+.semibold_font_for_banner_description_text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+@media (max-width: 767px) {
+    .semibold_font_for_banner_description_text {
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 10px;
+    }
+}
+
+.semibold_font_for_contest_text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.bold_font_for_news_title_text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.semibold_font_for_news_item_title_text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+.medium_text_for_news_item_description {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+}
+.medium_text_for_news_item_date {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+.medium_text_for_big_see_more {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.bold_font_for_projects_title_text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.projects_photo_button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+@media (max-width: 767px) {
+    .projects_photo_button {
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+    }
+}
+
+.semibold_font_for_projects_item_title_text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+@media (max-width: 767px) {
+    .semibold_font_for_projects_item_title_text {
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
+
+.medium__font_for_projects_item_description_text {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+@media (max-width: 767px) {
+    .medium__font_for_projects_item_description_text {
+        font-family: 'Inter', sans-serif;
+        font-weight: normal;
+        font-size: 10px;
+    }
 }

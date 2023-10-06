@@ -1,0 +1,23 @@
+.texno-icon {
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.texno-soft-icon {
+    background-image: url("../images/projectsTypeIcon/software.png");
+}
+
+.texno-bio-icon {
+    background-image: url("../images/projectsTypeIcon/biology.png");
+}
+
+.texno-hard-icon {
+    background-image: url("../images/projectsTypeIcon/hardware.png");
+}
+
+.texno-full-icon {
+    background-image: url("../images/projectsTypeIcon/full.png");
+}
