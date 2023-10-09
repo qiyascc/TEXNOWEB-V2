@@ -6,18 +6,18 @@
     margin-right: 10px;
 }
 
-.texno-soft-icon {
-    background-image: url("../images/projectsTypeIcon/software.png");
+.texno-soft-icon { 
+    background-image: url("../images/topImages/icons/projectsTypeIcon/software.png");
 }
 
 .texno-bio-icon {
-    background-image: url("../images/projectsTypeIcon/biology.png");
+    background-image: url("../images/topImages/icons/projectsTypeIcon/biogas.png");
 }
 
 .texno-hard-icon {
-    background-image: url("../images/projectsTypeIcon/hardware.png");
+    background-image: url("../images/topImages/icons/projectsTypeIcon/hardware.png");
 }
 
 .texno-full-icon {
-    background-image: url("../images/projectsTypeIcon/full.png");
+    background-image: url("../images/topImages/icons/projectsTypeIcon/full.png");
 }

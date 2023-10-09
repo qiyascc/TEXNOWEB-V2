@@ -4,7 +4,7 @@ class FooterElement extends HTMLElement {
         <footer class="container-fluid py-4 footer_margin_top">
             <div class="row justify-content-center text-center mb-4">
                 <div class="col-md-10 text-md-start">
-                    <img src="../../../images/topImages/navbarAndFooter/logo.png" alt="Logo" class="footer-brand mb-4" />
+                    <img src="../images/topImages/navbarAndFooter/logo.png" alt="Logo" class="footer-brand mb-4" />
                 </div>
             </div>
             <div class="row justify-content-center text-start footer-margin-left">

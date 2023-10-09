@@ -13,7 +13,7 @@ class NewsElement extends HTMLElement {
             <div class="row mt-4">
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="card p-3 rounded-3 max-height-for-news-item">
-                        <img src="../../../images/mainPageImages/news/saf.png" class="card-img-top" alt="...">
+                        <img src="../images/mainPageImages/news/saf.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title semibold_font_for_news_item_title_text">SAF 2023</h5>
                             <p class="card-text medium_text_for_news_item_description news_description_color">
@@ -43,7 +43,7 @@ class NewsElement extends HTMLElement {
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="card p-3 rounded-3 max-height-for-news-item">
-                    <img src="../../../images/mainPageImages/news/battlebots.png" class="card-img-top" alt="...">
+                    <img src="../images/mainPageImages/news/battlebots.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title semibold_font_for_news_item_title_text">WCU Battle Bots</h5>
                             <p class="card-text medium_text_for_news_item_description news_description_color">
@@ -73,7 +73,7 @@ class NewsElement extends HTMLElement {
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="card p-3 rounded-3 max-height-for-news-item">
-                    <img src="../../../images/mainPageImages/news/texnoparkCom.png" class="card-img-top" alt="...">
+                    <img src="../images/mainPageImages/news/texnoparkCom.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title semibold_font_for_news_item_title_text">TEXNOPARK.com</h5>
                             <p class="card-text medium_text_for_news_item_description news_description_color">
@@ -96,7 +96,7 @@ class NewsElement extends HTMLElement {
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="card p-3 rounded-3 max-height-for-news-item">
-                    <img src="../../../images/mainPageImages/news/wcuapp.jpg" class="card-img-top" alt="...">
+                    <img src="../images/mainPageImages/news/wcuapp.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title semibold_font_for_news_item_title_text">WCU Mobile</h5>
                             <p class="card-text medium_text_for_news_item_description news_description_color">
