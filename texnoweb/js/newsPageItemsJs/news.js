@@ -12,7 +12,7 @@ class NewsElement extends HTMLElement {
                 </div>
                 </div>  
             </div>
-            <div class="row mt-4" id="news-row">
+            <div class="row mt-4 margin_top_for_news_container" id="news-row">
             <!-- Kartlar -->
             </div>
         </div>
