@@ -1,0 +1,22 @@
+.card {
+    border: none;
+    padding: 15px;
+}
+.card-header {
+    display: flex;
+    align-items: center;
+    background: transparent !important;
+    border: none !important;
+}
+.card-header img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+.card-footer {
+    display: flex;
+    justify-content: flex-end;
+    background: transparent !important;
+    border: none !important;
+}
