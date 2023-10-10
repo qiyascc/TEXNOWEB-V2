@@ -1,40 +1,8 @@
- @media (max-width: 992px) {
-    .navbar-nav .nav-link {
-        text-align: center;
-        width: 100%;
-    }
-
-    .mobile-nav-links {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-.navbar-brand img {
-    width: 6vw;
-    max-width: 95%;
-    min-width: 82px;
-    height: auto;
-}
-.register_button_navbar:hover {
-    border-radius: 0.375rem;
-}
-.footer_margin_top {
-    margin-top: 8%;
-}
-.footer-brand {
-    width: 6vw;
-    max-width: 114px;
-    min-width: 114px;
-    height: auto;
-}
 .banner_image_left_margin {
     margin-left: 64px;
 }
 
 @media (max-width: 767px) {
-    .footer-margin-left {
-        padding-left: 100px;
-    }
     .banner_image_left_margin {
         margin-left: 0;
     }

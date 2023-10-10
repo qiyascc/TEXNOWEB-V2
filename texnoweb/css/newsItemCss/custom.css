@@ -1,0 +1,19 @@
+.margin_top_for_news {
+    margin-top: 5%;
+}
+.margin_top_for_news_container {
+    margin-top: 5%;
+}
+@media (max-width: 767.98px) {
+    .card {
+        flex-direction: row;
+    }
+    .card img {
+        width: 50%;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: calc(0.375rem - 1px);
+    }
+    .card-body {
+        width: 50%;
+    }
+}

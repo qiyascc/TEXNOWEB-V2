@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/colors.css">
+    <link rel="stylesheet" href="../css/newsItemCss/custom.css">
+    <link rel="stylesheet" href="../css/navbarandFooter.css">
+    <link rel="stylesheet" href="../css/icon.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <title>News | TexnoPark</title>
+</head>
+
+<body>
+    <!-- Navbar elements -->
+    <navbar-element></navbar-element>
+
+    <main>
+
+        <!-- <news-element></news-element> -->
+        <!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Xəbərlər</title>
+</head>
+<body>
+
+<div class="container margin_top_for_news">
+    <div class="row">
+        <div class="col-6">
+            <h4 class="bold_font_for_news_title_text">Xəbərlər</h4>
+        </div>
+        <div class="col-6 text-end">
+            <a href="#" class="text-decoration-none see_more_color medium_text_for_big_see_more">Daha çoxu ></a>
+        </div>
+    </div>
+    <div class="row mt-4" id="news-row">
+        <!-- News items will be injected here -->
+    </div>
+</div>
+
+<script type="text/javascript">
+    const newsItems = [
+        {
+            title: 'SAF 2023',
+            image: '../images/mainPageImages/news/saf.png',
+            text: 'SAF (STEAM Azerbaijan Festival) 2023 – Təshil Nazirliyinin dəstəyi ilə ...',
+            date: '28.09.2023',
+            link: '#'
+        },
+        {
+            title: 'WCU Battle Bots',
+            image: '../images/mainPageImages/news/battlebots.png',
+            text: 'Lego Robot Yarışları: Qəhrəmanlar Aramızdadır! ...',
+            date: '28.09.2023',
+            link: '#'
+        },
+
+        {
+            title: 'WCU Battle Bots',
+            image: '../images/mainPageImages/news/battlebots.png',
+            text: 'Lego Robot Yarışları: Qəhrəmanlar Aramızdadır! ...',
+            date: '28.09.2023',
+            link: '#'
+        },
+
+        {
+            title: 'WCU Battle Bots',
+            image: '../images/mainPageImages/news/battlebots.png',
+            text: 'Lego Robot Yarışları: Qəhrəmanlar Aramızdadır! ...',
+            date: '28.09.2023',
+            link: '#'
+        },
+
+        {
+            title: 'WCU Battle Bots',
+            image: '../images/mainPageImages/news/battlebots.png',
+            text: 'Lego Robot Yarışları: Qəhrəmanlar Aramızdadır! ...',
+            date: '28.09.2023',
+            link: '#'
+        },
+
+        {
+            title: 'WCU Battle Bots',
+            image: '../images/mainPageImages/news/battlebots.png',
+            text: 'Lego Robot Yarışları: Qəhrəmanlar Aramızdadır! ...',
+            date: '28.09.2023',
+            link: '#'
+        },
+        // ... more news items
+    ];
+
+    const newsRow = document.getElementById('news-row');
+
+    newsItems.forEach(item => {
+        const newsItemHtml = `
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card p-3 rounded-3 max-height-for-news-item">
+                    <img src="${item.image}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title semibold_font_for_news_item_title_text">${item.title}</h5>
+                        <p class="card-text medium_text_for_news_item_description news_description_color">
+                            ${item.text}
+                        </p>
+                        <div class="d-flex justify-content-between">
+                            <small class="medium_text_for_news_item_date news_date_color">${item.date}</small>
+                            <a href="${item.link}" class="text-decoration-none see_more_color">Davamı ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        newsRow.innerHTML += newsItemHtml;
+    });
+</script>
+
+</body>
+</html>
+
+        
+
+    </main>
+
+    <!-- Footer elements -->
+    <footer-element></footer-element>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Top Items -->
+    <script src="../js/topitems/title.js"></script> <!-- Changeable title -->
+    <script src="../js/topitems/navbar.js"></script> <!-- Navbar Element -->
+    <script src="../js/topitems/footer.js"></script> <!-- Footer Element -->
+
+    <!-- Main Page Items -->
+    <script src="../js/newsPageItemsJs/news.js"></script> <!-- News Element -->
+
+    <!-- Other JS Files -->
+    <script src="../js/js/charlimitForNews.js"></script>
+</body>
+
+</html>
