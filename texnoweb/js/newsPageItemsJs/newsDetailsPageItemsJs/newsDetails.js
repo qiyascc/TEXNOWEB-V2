@@ -1,18 +1,14 @@
 class NewsDetailElement extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-        <div class="container margin_top_for_news">
+        <div class="container margin_top_for_news_details">
             <div class="row">
-                <div class="col-md-5 mx-auto">
-                <div class="input-group">
-                    <input type="search" placeholder="Search news for you..." aria-describedby="button-addon1" class="form-control border-0 bg-light search_bar_for_news_page">
-                    <div class="input-group-append">
-                        <button id="button-addon1" type="submit" class="btn rounded-3 bg-light search_button_for_search_news_in_news_page"><i class="fa fa-search"></i></button>
-                    </div>
+                <div class="text-center">
+                    <a href="#" class="text-decoration-none see_more_color medium_text_for_big_see_more">Daha çoxu ></a>
                 </div>
-                </div>  
             </div>
             <div class="row mt-4 margin_top_for_news_container" id="news-row">
+            <!-- Kartlar -->
             </div>
         </div>
         
