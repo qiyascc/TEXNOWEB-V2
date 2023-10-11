@@ -33,7 +33,7 @@
         <div class="container">
             <div class="row mt-4">
                 <div class="">
-                    <div class="card">
+                    <div class="card news-detail-card">
                         <div class="card-header">
                             <img src="../images/mainPageImages/news/saf.png" alt="Image">
                             <h5>SAF 2023</h5>
@@ -45,9 +45,31 @@
                             <small>28.09.2023</small>
                         </div>
                     </div>
+                    <div class="card gallery-card">
+                        <div class="card-header">
+                            <h5>Qalereya</h5>
+                        </div>
+                        <div class="container mt-5">
+                            <div class="row scrolling-wrapper">
+                              <div class="col-4">
+                                <div class="img-container">
+                                  <img src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/1.webp" alt="Resim 1" class="newsDetails_gallery_img_item">
+                                  <img src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/1.webp" alt="Resim 1" class="newsDetails_gallery_img_item">
+                                  <img src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/1.webp" alt="Resim 1" class="newsDetails_gallery_img_item">
+                                  <img src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/1.webp" alt="Resim 1" class="newsDetails_gallery_img_item">
+                                  <img src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/1.webp" alt="Resim 1" class="newsDetails_gallery_img_item">
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <news-detail-element></news-detail-element>
+
+
 
     </main>
 
@@ -60,6 +82,70 @@
     <script src="../js/topitems/title.js"></script> <!-- Changeable title -->
     <script src="../js/topitems/navbar.js"></script> <!-- Navbar Element -->
     <script src="../js/topitems/footer.js"></script> <!-- Footer Element -->
+
+    <script src="../js/js/charlimitForNews.js"></script>
+
+    <script src="../js/newsPageItemsJs/newsDetailsPageItemsJs/newsDetails.js"></script>
+
+    <script type="text/javascript">
+        const newsItems = [
+            {
+                title: 'SAF 2023',
+                image: '../images/mainPageImages/news/saf.png',
+                text: 'Biz, bu tətbiqi hazırlamaqla tələbələrimizin tədris keyfiyyətini yaxşılaşdırmağı hədəfləyirik. Dekanlıq, müəllim, tələbə kom munikasiyasını, dəyişən dərs proqramını, gündəlik qiymətləri ni, ÜOMG-ni, akademik borcunu və s. informasiyaları vaxtında əldə edə biləcəyiniz bir platforma olacaq. Bununla yanaşı xəbər axışında universitetdə keçirilən tədbir lər, ölkədə və dünyada keçirilən yarışlar barədə məlumat ala bilcəksiniz. Dostlarınızla əlaqə saxlamağınızı və universitetdəki maraqlı klub və paylaşımları izləməyinizi təmin edən bu tətbiq, univer sitet təcrübənizi daha sosial və inteqrasiya olunmuş bir mühitə çevirir. Biz bu mobil aplikasiyamızı Texnoparkda proqramlaşdırırıq. Əgər sizin də proqramlaşdırma bilginiz və bu tərz layihəniz varsa, Texnoparkımıza müraciət edərək reallaşdıra bilərsiniz.',
+                date: '28.09.2023',
+                link: './newsDetails.html'
+            },
+            {
+                title: 'SAF 2023',
+                image: '../images/mainPageImages/news/saf.png',
+                text: 'Biz, bu tətbiqi hazırlamaqla tələbələrimizin tədris keyfiyyətini yaxşılaşdırmağı hədəfləyirik. Dekanlıq, müəllim, tələbə kom munikasiyasını, dəyişən dərs proqramını, gündəlik qiymətləri ni, ÜOMG-ni, akademik borcunu və s. informasiyaları vaxtında əldə edə biləcəyiniz bir platforma olacaq. Bununla yanaşı xəbər axışında universitetdə keçirilən tədbir lər, ölkədə və dünyada keçirilən yarışlar barədə məlumat ala bilcəksiniz. Dostlarınızla əlaqə saxlamağınızı və universitetdəki maraqlı klub və paylaşımları izləməyinizi təmin edən bu tətbiq, univer sitet təcrübənizi daha sosial və inteqrasiya olunmuş bir mühitə çevirir. Biz bu mobil aplikasiyamızı Texnoparkda proqramlaşdırırıq. Əgər sizin də proqramlaşdırma bilginiz və bu tərz layihəniz varsa, Texnoparkımıza müraciət edərək reallaşdıra bilərsiniz.',
+                date: '28.09.2023',
+                link: './newsDetails.html'
+            },
+            {
+                title: 'SAF 2023',
+                image: '../images/mainPageImages/news/saf.png',
+                text: 'Biz, bu tətbiqi hazırlamaqla tələbələrimizin tədris keyfiyyətini yaxşılaşdırmağı hədəfləyirik. Dekanlıq, müəllim, tələbə kom munikasiyasını, dəyişən dərs proqramını, gündəlik qiymətləri ni, ÜOMG-ni, akademik borcunu və s. informasiyaları vaxtında əldə edə biləcəyiniz bir platforma olacaq. Bununla yanaşı xəbər axışında universitetdə keçirilən tədbir lər, ölkədə və dünyada keçirilən yarışlar barədə məlumat ala bilcəksiniz. Dostlarınızla əlaqə saxlamağınızı və universitetdəki maraqlı klub və paylaşımları izləməyinizi təmin edən bu tətbiq, univer sitet təcrübənizi daha sosial və inteqrasiya olunmuş bir mühitə çevirir. Biz bu mobil aplikasiyamızı Texnoparkda proqramlaşdırırıq. Əgər sizin də proqramlaşdırma bilginiz və bu tərz layihəniz varsa, Texnoparkımıza müraciət edərək reallaşdıra bilərsiniz.',
+                date: '28.09.2023',
+                link: './newsDetails.html'
+            },
+            {
+                title: 'SAF 2023',
+                image: '../images/mainPageImages/news/saf.png',
+                text: 'Biz, bu tətbiqi hazırlamaqla tələbələrimizin tədris keyfiyyətini yaxşılaşdırmağı hədəfləyirik. Dekanlıq, müəllim, tələbə kom munikasiyasını, dəyişən dərs proqramını, gündəlik qiymətləri ni, ÜOMG-ni, akademik borcunu və s. informasiyaları vaxtında əldə edə biləcəyiniz bir platforma olacaq. Bununla yanaşı xəbər axışında universitetdə keçirilən tədbir lər, ölkədə və dünyada keçirilən yarışlar barədə məlumat ala bilcəksiniz. Dostlarınızla əlaqə saxlamağınızı və universitetdəki maraqlı klub və paylaşımları izləməyinizi təmin edən bu tətbiq, univer sitet təcrübənizi daha sosial və inteqrasiya olunmuş bir mühitə çevirir. Biz bu mobil aplikasiyamızı Texnoparkda proqramlaşdırırıq. Əgər sizin də proqramlaşdırma bilginiz və bu tərz layihəniz varsa, Texnoparkımıza müraciət edərək reallaşdıra bilərsiniz.',
+                date: '28.09.2023',
+                link: './newsDetails.html'
+            },
+        ];
+    
+        const newsRow = document.getElementById('news-row');
+    
+        newsItems.forEach(item => {
+            const newsItemHtml = `
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card p-3 rounded-3 max-height-for-news-item news_details_item">
+                            <div class="card-header">
+                                <img src="${item.image}" class="card-img-top" alt="...">
+                                <h5 class="card-title semibold_font_for_news_item_title_text">${item.title}</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text medium_text_for_news_item_description news_description_color">
+                                    ${item.text}
+                                </p>
+    
+                                <div class="d-flex justify-content-between">
+                                    <small class="medium_text_for_news_item_date news_date_color">${item.date}</small>
+                                    <a href="${item.link}" class="text-decoration-none see_more_color">Davamı ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            `;
+    
+            newsRow.innerHTML += newsItemHtml;
+        });
+    </script>
 
 </body>
 
