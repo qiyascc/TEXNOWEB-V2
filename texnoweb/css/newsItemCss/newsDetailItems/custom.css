@@ -29,8 +29,9 @@
     display: inline-block;
 }
 .newsDetails_gallery_img_item {
-    width: 100%;
+    width: 50%;
     border-radius: 5px;
+    /* border: 1px solid black; */
 }
 
 .margin_top_for_news_details {
@@ -74,7 +75,7 @@
         align-items: center;
     }
     .newsDetails_gallery_img_item {
-        width: 250% !important;
+        width: 175% !important;
         border-radius: 5px;
     }
 }

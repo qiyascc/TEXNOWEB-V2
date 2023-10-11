@@ -161,3 +161,14 @@
         font-size: 10px;
     }
 }
+
+.semibold_font_for_news_detail_header {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+}
+.medium_font_for_news_detail_description {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}

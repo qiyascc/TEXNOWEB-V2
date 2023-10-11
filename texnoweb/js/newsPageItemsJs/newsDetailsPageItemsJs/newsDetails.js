@@ -16,4 +16,4 @@ class NewsDetailElement extends HTMLElement {
     }
 }
 
-customElements.define('news-detail-element', NewsDetailElement);
+customElements.define('news-detail-last-4-element', NewsDetailElement);

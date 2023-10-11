@@ -30,50 +30,11 @@
 
     <main>
 
-        <div class="container">
-            <div class="row mt-4">
-                <div class="">
-                    <div class="card news-detail-card">
-                        <div class="card-header">
-                            <img src="../images/mainPageImages/news/saf.png" alt="Image">
-                            <h5>SAF 2023</h5>
-                        </div>
-                        <div class="card-body">
-                            <p>Biz, bu tətbiqi hazırlamaqla tələbələrimizin tədris keyfiyyətini yaxşılaşdırmağı hədəfləyirik. Dekanlıq, müəllim, tələbə kom munikasiyasını, dəyişən dərs proqramını, gündəlik qiymətləri ni, ÜOMG-ni, akademik borcunu və s. informasiyaları vaxtında əldə edə biləcəyiniz bir platforma olacaq. Bununla yanaşı xəbər axışında universitetdə keçirilən tədbir lər, ölkədə və dünyada keçirilən yarışlar barədə məlumat ala bilcəksiniz. Dostlarınızla əlaqə saxlamağınızı və universitetdəki maraqlı klub və paylaşımları izləməyinizi təmin edən bu tətbiq, univer sitet təcrübənizi daha sosial və inteqrasiya olunmuş bir mühitə çevirir. Biz bu mobil aplikasiyamızı Texnoparkda proqramlaşdırırıq. Əgər sizin də proqramlaşdırma bilginiz və bu tərz layihəniz varsa, Texnoparkımıza müraciət edərək reallaşdıra bilərsiniz.</p>
-                        </div>
-                        <div class="card-footer">
-                            <small>28.09.2023</small>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
+        <detailed-news></detailed-news>
         
-        <div class="container">
-            <div class="row mt-4">
-                <div class="card gallery-card">
-                        <div class="card-header">
-                            <h5>Qalereya</h5>
-                        </div>
-                        <div class="container mt-5">
-                            <div class="row scrolling-wrapper">
-                              <div class="col-4">
-                                <div class="img-container">
-                                  <img src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/1.webp" alt="Resim 1" class="newsDetails_gallery_img_item">
-                                  <img src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/1.webp" alt="Resim 1" class="newsDetails_gallery_img_item">
-                                  <img src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/1.webp" alt="Resim 1" class="newsDetails_gallery_img_item">
-                                  <img src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/1.webp" alt="Resim 1" class="newsDetails_gallery_img_item">
-                                  <img src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/1.webp" alt="Resim 1" class="newsDetails_gallery_img_item">
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-                    </div>z
-            </div>
-        </div>
+        <gallery-element></gallery-element>
 
-        <news-detail-element></news-detail-element>
+        <news-detail-last-4-element></news-detail-last-4-element>
 
 
 
@@ -92,6 +53,8 @@
     <script src="../js/js/charlimitForNews.js"></script>
 
     <script src="../js/newsPageItemsJs/newsDetailsPageItemsJs/newsDetails.js"></script>
+    <script src="../js/newsPageItemsJs/newsDetailsPageItemsJs/gallery.js"></script>
+    <script src="../js/newsPageItemsJs/newsDetailsPageItemsJs/detailedNews.js"></script>
 
     <script type="text/javascript">
         const newsItems = [
@@ -152,6 +115,34 @@
             newsRow.innerHTML += newsItemHtml;
         });
     </script>
+
+
+
+    <script type="text/javascript">
+        const galleryItem = [
+            {
+                galleryImage: '../images/mainPageImages/news/saf.png',
+                galleryImageAltText: 'SAF 2023',
+
+            },
+            
+        ];
+
+        const galleryRow = document.getElementById('gallery-items-img');
+
+        galleryItem.forEach(gItem => {
+            const galleryItemHtml = `
+                <img src="${gItem.galleryImage}" alt="${gItem.galleryImageAltText}" class="newsDetails_gallery_img_item">
+            `;
+
+            galleryRow.innerHTML += galleryItemHtml;
+        });
+    </script>
+
+
+
+
+       
 
 </body>
 
