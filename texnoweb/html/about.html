@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/colors.css">
+    <link rel="stylesheet" href="../css/navbarandFooter.css">
+    <link rel="stylesheet" href="../css/icon.css">
+
+    <link rel="stylesheet" href="../css/aboutItemCss/custom.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css">
+
+
+    <title>About | TexnoPark</title>
+</head>
+
+<body>
+    <!-- Navbar elements -->
+    <navbar-element></navbar-element>
+
+    <main>
+        <about-element></about-element>
+    </main>
+
+    <footer-element></footer-element>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript">
+        const galleryItems = [
+            {
+                imageUrl: '../images/testPhotos/osman.jpg',
+                altText: 'Osman Hacılı'
+            },
+        ];
+
+        const galleryRow = document.querySelector('.row.row-cols-1.row-cols-md-4.g-4');
+
+        galleryItems.forEach(item => {
+            const galleryItemHtml = `
+                <div class="col">
+                    <div class="card">
+                        <img src="${item.imageUrl}" class="card-img-top" alt="${item.altText}">
+                    </div>
+                </div>
+            `;
+
+            galleryRow.innerHTML += galleryItemHtml;
+        });
+    </script>
+
+    <script src="../js/aboutPageItemsJs/about.js"></script>
+
+    <!-- Top Items -->
+    <script src="../js/topitems/title.js"></script> <!-- Changeable title -->
+    <script src="../js/topitems/navbar.js"></script> <!-- Navbar Element -->
+    <script src="../js/topitems/footer.js"></script> <!-- Footer Element -->
+    
+    </body>
+    </html>
+</body>
+
+</html>

@@ -172,3 +172,19 @@
     font-weight: normal;
     font-size: 14px;
 }
+
+.bold_font_for_gallery_titles {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+}
+.medium_font_for_gallery_descriptions {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+.semibold_font_for_gallery_buttons {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
