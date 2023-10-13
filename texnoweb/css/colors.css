@@ -72,5 +72,17 @@ body {
     color: var(--main-color-texnopark);
 }
 .projects_item_description_text_color {
-    color: var(--texno-gray-color);
+    color: var(--texno-gray-color) !important;
+}
+.contact_page_contact_icons_color i {
+    color: var(--main-color-texnopark);
+}
+.contact_page_social_color {
+    color: var(--texno-gray-color) !important;
+}
+.contact_form_placeholder_color {
+    color: var(--texno-gray-color) !important;
+}
+.form_submit_button_background_color {
+    background-color: var(--main-color-texnopark) !important;
 }

@@ -18,6 +18,12 @@
     font-weight: 700;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter/static/Inter-Regular.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
 
 
 .medium_texno_text_for_up_navbar {
@@ -184,6 +190,50 @@
     font-size: 14px;
 }
 .semibold_font_for_gallery_buttons {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+.bold_font_for_contact_us_title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+}
+@media (max-width: 767px) {
+    .bold_font_for_contact_us_title {
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+    }
+}
+.bold_font_for_faq_title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+}
+@media (max-width: 767px) {
+    .bold_font_for_faq_title {
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+    }
+}
+.bold_fot_for_faq_items_title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+.regular_font_for_faq_items_descriptions {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+.medium_font_for_contact_social {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+.semibold_font_for_contact_form_placeholder_text::placeholder {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 14px;
