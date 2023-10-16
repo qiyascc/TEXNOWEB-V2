@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/colors.css">
     <link rel="stylesheet" href="../css/navbarandFooter.css">
+    <link rel="stylesheet" href="../css/icon.css">
 
-    <link rel="stylesheet" href="../css/contactItemCss/custom.css">
-
+    <link rel="stylesheet" href="../css/projectsItemCss/custom.css">
 
     <title>Projects | TexnoPark</title>
 </head>
@@ -23,12 +23,38 @@
 
     <main>
 
-        
+        <div class="container margin_top_for_projects">
+            <div class="row">
+                <div class="col-md-5 mx-auto">
+                    <div class="input-group">
+                        <input type="search" placeholder="Search projects for you..." aria-describedby="button-addon1" class="form-control border-0 bg-light search_bar_for_projects_page">
+                        <div class="input-group-append">
+                            <button id="button-addon1" type="submit" class="btn rounded-3 bg-light search_button_for_search_projects_in_projects_page">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-2 margin_top_for_projects_container text-center">
+                <div class="col-md-5 mx-auto">
+                    <button onclick="filterProjects('all')" class="btn btn-outline-secondary m-1">All</button>
+                    <button onclick="filterProjects('software')" class="btn btn-outline-secondary m-1">Software</button>
+                    <button onclick="filterProjects('hardware')" class="btn btn-outline-secondary m-1">Hardware</button>
+                    <button onclick="filterProjects('biology')" class="btn btn-outline-secondary m-1">Biology</button>
+                </div>
+            </div>
+            <div class="row mt-4 margin_top_for_projects_container" id="projects-row">
+            </div>
+        </div>
+
+
+
+
     </main>
 
     <!-- Footer elements -->
     <footer-element></footer-element>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -36,6 +62,98 @@
     <script src="../js/topitems/title.js"></script> <!-- Changeable title -->
     <script src="../js/topitems/navbar.js"></script> <!-- Navbar Element -->
     <script src="../js/topitems/footer.js"></script> <!-- Footer Element -->
+
+    <!-- Main Page Items -->
     
+
+    <!-- Other JS Files -->
+    <script src="../js/js/charLimitForProjects.js"></script>
+
+    <script type="text/javascript">
+        const projectsItems = [
+            {
+                category: 'software',
+                title: 'SAF 2023',
+                image: '../images/mainPageImages/news/saf.png',
+                text: 'Biz, bu tətbiqi hazırlamaqla tələbələrimizin tədris keyfiyyətini yaxşılaşdırmağı hədəfləyirik. Dekanlıq, müəllim, tələbə kom munikasiyasını, dəyişən dərs proqramını, gündəlik qiymətləri ni, ÜOMG-ni, akademik borcunu və s. informasiyaları vaxtında əldə edə biləcəyiniz bir platforma olacaq. Bununla yanaşı xəbər axışında universitetdə keçirilən tədbir lər, ölkədə və dünyada keçirilən yarışlar barədə məlumat ala bilcəksiniz. Dostlarınızla əlaqə saxlamağınızı və universitetdəki maraqlı klub və paylaşımları izləməyinizi təmin edən bu tətbiq, univer sitet təcrübənizi daha sosial və inteqrasiya olunmuş bir mühitə çevirir. Biz bu mobil aplikasiyamızı Texnoparkda proqramlaşdırırıq. Əgər sizin də proqramlaşdırma bilginiz və bu tərz layihəniz varsa, Texnoparkımıza müraciət edərək reallaşdıra bilərsiniz.',
+                date: '28.09.2023',
+                link: './projectsDetails.html'
+            },
+            {
+                category: 'hardware',
+                title: 'SAF 2023',
+                image: '../images/mainPageImages/news/saf.png',
+                text: 'Biz, bu tətbiqi hazırlamaqla tələbələrimizin tədris keyfiyyətini yaxşılaşdırmağı hədəfləyirik. Dekanlıq, müəllim, tələbə kom munikasiyasını, dəyişən dərs proqramını, gündəlik qiymətləri ni, ÜOMG-ni, akademik borcunu və s. informasiyaları vaxtında əldə edə biləcəyiniz bir platforma olacaq. Bununla yanaşı xəbər axışında universitetdə keçirilən tədbir lər, ölkədə və dünyada keçirilən yarışlar barədə məlumat ala bilcəksiniz. Dostlarınızla əlaqə saxlamağınızı və universitetdəki maraqlı klub və paylaşımları izləməyinizi təmin edən bu tətbiq, univer sitet təcrübənizi daha sosial və inteqrasiya olunmuş bir mühitə çevirir. Biz bu mobil aplikasiyamızı Texnoparkda proqramlaşdırırıq. Əgər sizin də proqramlaşdırma bilginiz və bu tərz layihəniz varsa, Texnoparkımıza müraciət edərək reallaşdıra bilərsiniz.',
+                date: '28.09.2023',
+                link: './projectsDetails.html'
+            },
+            {
+                category: 'hardware',
+                title: 'SAF 2023',
+                image: '../images/mainPageImages/news/saf.png',
+                text: 'Biz, bu tətbiqi hazırlamaqla tələbələrimizin tədris keyfiyyətini yaxşılaşdırmağı hədəfləyirik. Dekanlıq, müəllim, tələbə kom munikasiyasını, dəyişən dərs proqramını, gündəlik qiymətləri ni, ÜOMG-ni, akademik borcunu və s. informasiyaları vaxtında əldə edə biləcəyiniz bir platforma olacaq. Bununla yanaşı xəbər axışında universitetdə keçirilən tədbir lər, ölkədə və dünyada keçirilən yarışlar barədə məlumat ala bilcəksiniz. Dostlarınızla əlaqə saxlamağınızı və universitetdəki maraqlı klub və paylaşımları izləməyinizi təmin edən bu tətbiq, univer sitet təcrübənizi daha sosial və inteqrasiya olunmuş bir mühitə çevirir. Biz bu mobil aplikasiyamızı Texnoparkda proqramlaşdırırıq. Əgər sizin də proqramlaşdırma bilginiz və bu tərz layihəniz varsa, Texnoparkımıza müraciət edərək reallaşdıra bilərsiniz.',
+                date: '28.09.2023',
+                link: './projectsDetails.html'
+            },
+            {
+                category: 'biology',
+                title: 'SAF 2023',
+                image: '../images/mainPageImages/news/saf.png',
+                text: 'Biz, bu tətbiqi hazırlamaqla tələbələrimizin tədris keyfiyyətini yaxşılaşdırmağı hədəfləyirik. Dekanlıq, müəllim, tələbə kom munikasiyasını, dəyişən dərs proqramını, gündəlik qiymətləri ni, ÜOMG-ni, akademik borcunu və s. informasiyaları vaxtında əldə edə biləcəyiniz bir platforma olacaq. Bununla yanaşı xəbər axışında universitetdə keçirilən tədbir lər, ölkədə və dünyada keçirilən yarışlar barədə məlumat ala bilcəksiniz. Dostlarınızla əlaqə saxlamağınızı və universitetdəki maraqlı klub və paylaşımları izləməyinizi təmin edən bu tətbiq, univer sitet təcrübənizi daha sosial və inteqrasiya olunmuş bir mühitə çevirir. Biz bu mobil aplikasiyamızı Texnoparkda proqramlaşdırırıq. Əgər sizin də proqramlaşdırma bilginiz və bu tərz layihəniz varsa, Texnoparkımıza müraciət edərək reallaşdıra bilərsiniz.',
+                date: '28.09.2023',
+                link: './projectsDetails.html'
+            },
+            {
+                category: 'software',
+                title: 'SAF 2023',
+                image: '../images/mainPageImages/news/saf.png',
+                text: 'Biz, bu tətbiqi hazırlamaqla tələbələrimizin tədris keyfiyyətini yaxşılaşdırmağı hədəfləyirik. Dekanlıq, müəllim, tələbə kom munikasiyasını, dəyişən dərs proqramını, gündəlik qiymətləri ni, ÜOMG-ni, akademik borcunu və s. informasiyaları vaxtında əldə edə biləcəyiniz bir platforma olacaq. Bununla yanaşı xəbər axışında universitetdə keçirilən tədbir lər, ölkədə və dünyada keçirilən yarışlar barədə məlumat ala bilcəksiniz. Dostlarınızla əlaqə saxlamağınızı və universitetdəki maraqlı klub və paylaşımları izləməyinizi təmin edən bu tətbiq, univer sitet təcrübənizi daha sosial və inteqrasiya olunmuş bir mühitə çevirir. Biz bu mobil aplikasiyamızı Texnoparkda proqramlaşdırırıq. Əgər sizin də proqramlaşdırma bilginiz və bu tərz layihəniz varsa, Texnoparkımıza müraciət edərək reallaşdıra bilərsiniz.',
+                date: '28.09.2023',
+                link: './projectsDetails.html'
+            },
+        ];
+
+        const projectsRow = document.getElementById('projects-row');
+
+        function filterProjects(category) {
+            const filteredProjects = projectsItems.filter(item => category === 'all' || item.category === category);
+            const projectsRow = document.getElementById('projects-row');
+            projectsRow.innerHTML = '';
+            filteredProjects.forEach(item => {
+                const projectsItemHtml = `
+                <div class="col-lg-4 col-md-4 mb-4">
+                    <div class="card p-3 rounded-3 max-height-for-projects-item">
+                        <div class="card-header">
+                            <img src="${item.image}" class="card-img-top" alt="...">
+                            <h5 class="card-title semibold_font_for_projects_item_title_text">${item.title}</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text medium_text_for_projects_item_description projects_description_color">
+                                ${item.text}
+                            </p>
+                            <div class="d-flex justify-content-center">
+                                <a href="${item.link}" class="text-decoration-none see_more_color">Davamı ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                `;
+                projectsRow.innerHTML += projectsItemHtml;
+            });
+            var textElements = document.querySelectorAll('.medium_text_for_projects_item_description');
+            textElements.forEach(function(element) {
+                var textContent = element.innerText;
+                if (textContent.length > 200) {
+                    var truncatedText = textContent.substring(0, 200) + '...';
+                    element.innerText = truncatedText;
+                }
+            });
+        }   
+
+
+        
+        filterProjects('all');
+    </script>
 </body>
+
 </html>
