@@ -74,9 +74,6 @@ body {
 .projects_item_description_text_color {
     color: var(--texno-gray-color) !important;
 }
-.contact_page_contact_icons_color i {
-    color: var(--main-color-texnopark);
-}
 .contact_page_social_color {
     color: var(--texno-gray-color) !important;
 }
