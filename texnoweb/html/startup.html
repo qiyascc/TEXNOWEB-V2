@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../css/colors.css">
     <link rel="stylesheet" href="../css/navbarandFooter.css">
 
-    <link rel="stylesheet" href="../css/contactItemCss/custom.css">
+    <link rel="stylesheet" href="../css/startupItemCss/custom.css">
 
 
     <title>Startups | TexnoPark</title>
@@ -25,128 +25,78 @@
         <div class="banner container-fluid">
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-5 text-container order-2 order-md-1">
-                    <h1 class="mb-3 semibold_font_for_banner_text mt-3">WCU Startup Mərkəzi</h1>
-                    <p class="semibold_font_for_banner_description_text">
+                    <h1 class="mb-3 semibold_font_for_startup_banner_text mt-3">WCU Startup Mərkəzi</h1>
+                    <p class="semibold_font_for_startup_banner_description_text startup_banner_description_color">
                         Qərbi Kaspi Universitetinin yeni Startap Mərkəzi, gələcəyin lider sahibkarlarını indidən formalaşdırır! Burada, yenilikçi fikirlərinizi reallaşdırmaq şansına sahib olacaq, sektorun liderləri və təcrübəli mentorlarla bir araya gələrək vizyonunuzu həyata keçirə biləcəksiniz. Bura yalnız bir fikri olanlar üçün deyil, həmçinin də, bu fikirləri reallığa çevirmək üçün lazım olan vasitələrə, resurslara və biliyə sahib olmaq istəyənlər üçün ideal platformadır. Gəlin, dünyanı dəyişdirəcək ideyalarınızı birlikdə həyata keçiək,.
                     </p>
                     <a class="btn texnopark_white_text texnopark_main_background_color register_button_navbar" href="#" id="registerButton" style="padding: 12px 32px;">Qeydiyyat</a>
                 </div>
                 <div class="col-md-5 order-1 order-md-2">
-                    <img class="img-fluid mt-5 banner_image_left_margin" src="../images/startupPageImages/startupbanner.png" alt="" style="width: 100%; height: 100%; border-radius: 7px;">
+                    <img class="img-fluid mt-5 startup_banner_image_left_margin" src="../images/startupPageImages/startupbanner.png" alt="" style="width: 100%; height: 100%; border-radius: 7px;">
                 </div>
             </div>
         </div>
 
+        <div class="container margin_top_for_startups">
+            <div class="row" id="startups-header"></div>
+            <div class="row mt-4 flex-row flex-nowrap justify-content-between" style="overflow-x: auto;" id="startups-cards"></div>
+        </div>
+        
+        <script>
+            const startupsItems = [
+                {
+                    title: 'WCU Mobile',
+                    description: 'Biz, bu tətbiqi hazırlamaqla tələbələrimizin tədris keyfiyyətini yaxşılaşdırmağı hədəfləyirik. Dekanlıq, müəllim, tələbə kom munikasiyasını, dəyişən dərs proqramını, gündəlik qiymətləri ni, ÜOMG-ni, akademik borcunu və s. informasiyaları vaxtında əldə edə biləcəyiniz bir platforma olacaq.Bununla yanaşı xəbər axışında universitetdə keçirilən tədbir lər, ölkədə və dünyada keçirilən yarışlar barədə məlumat ala bilcəksiniz. Dostlarınızla əlaqə saxlamağınızı və universitetdəki maraqlı klub və paylaşımları izləməyinizi təmin edən bu tətbiq, univer sitet təcrübənizi daha sosial və inteqrasiya olunmuş bir mühitə çevirir.Biz bu mobil aplikasiyamızı Texnoparkda proqramlaşdırırıq.Əgər sizin də proqramlaşdırma bilginiz və bu tərz layihəniz varsa, Texnoparkımıza müraciət edərək reallaşdıra bilərsiniz.',
+                    imageUrl: '../images/mainPageImages/news/wcuapp.jpg',
+                    moreUrl: '#'
+                },
+                {
+                    title: 'WCU Mobile',
+                    description: 'Biz, bu tətbiqi hazırlamaqla tələbələrimizin tədris keyfiyyətini yaxşılaşdırmağı hədəfləyirik. Dekanlıq, müəllim, tələbə kom munikasiyasını, dəyişən dərs proqramını, gündəlik qiymətləri ni, ÜOMG-ni, akademik borcunu və s. informasiyaları vaxtında əldə edə biləcəyiniz bir platforma olacaq.Bununla yanaşı xəbər axışında universitetdə keçirilən tədbir lər, ölkədə və dünyada keçirilən yarışlar barədə məlumat ala bilcəksiniz. Dostlarınızla əlaqə saxlamağınızı və universitetdəki maraqlı klub və paylaşımları izləməyinizi təmin edən bu tətbiq, univer sitet təcrübənizi daha sosial və inteqrasiya olunmuş bir mühitə çevirir.Biz bu mobil aplikasiyamızı Texnoparkda proqramlaşdırırıq.Əgər sizin də proqramlaşdırma bilginiz və bu tərz layihəniz varsa, Texnoparkımıza müraciət edərək reallaşdıra bilərsiniz.',
+                    imageUrl: '../images/mainPageImages/news/wcuapp.jpg',
+                    moreUrl: '#'
+                },
+                {
+                    title: 'WCU Mobile',
+                    description: 'Biz, bu tətbiqi hazırlamaqla tələbələrimizin tədris keyfiyyətini yaxşılaşdırmağı hədəfləyirik. Dekanlıq, müəllim, tələbə kom munikasiyasını, dəyişən dərs proqramını, gündəlik qiymətləri ni, ÜOMG-ni, akademik borcunu və s. informasiyaları vaxtında əldə edə biləcəyiniz bir platforma olacaq.Bununla yanaşı xəbər axışında universitetdə keçirilən tədbir lər, ölkədə və dünyada keçirilən yarışlar barədə məlumat ala bilcəksiniz. Dostlarınızla əlaqə saxlamağınızı və universitetdəki maraqlı klub və paylaşımları izləməyinizi təmin edən bu tətbiq, univer sitet təcrübənizi daha sosial və inteqrasiya olunmuş bir mühitə çevirir.Biz bu mobil aplikasiyamızı Texnoparkda proqramlaşdırırıq.Əgər sizin də proqramlaşdırma bilginiz və bu tərz layihəniz varsa, Texnoparkımıza müraciət edərək reallaşdıra bilərsiniz.',
+                    imageUrl: '../images/mainPageImages/news/wcuapp.jpg',
+                    moreUrl: '#'
+                }
+            ];
+        
+            const startupsHeader = document.getElementById('startups-header');
+            const startupsCards = document.getElementById('startups-cards');
 
-
-        <div class="container  margin_top_for_news">
-            <div class="row">
+            startupsHeader.innerHTML = `
                 <div class="col-6">
-                    <h4 class="bold_font_for_news_title_text">Startuplar</h4>
+                    <h4 class="bold_font_for_startups_title_text">Startuplar</h4>
                 </div>
                 <div class="col-6 text-end">
                     <a href="#" class="text-decoration-none see_more_color medium_text_for_big_see_more">Daha çoxu ></a>
                 </div>
-            </div>
-            <div class="row mt-4 flex-row flex-nowrap" style="overflow-x: auto;">
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="card p-3 rounded-3 max-height-for-news-item">
-                        <img src="../images/mainPageImages/news/wcuapp.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title semibold_font_for_news_item_title_text">WCU Mobile</h5>
-                            <p class="card-text medium_text_for_news_item_description news_description_color">
-                                Biz, bu tətbiqi hazırlamaqla tələbələrimizin tədris keyfiyyətini 
-                                yaxşılaşdırmağı hədəfləyirik. Dekanlıq, müəllim, tələbə kom munikasiyasını, dəyişən dərs proqramını, gündəlik qiymətləri ni, ÜOMG-ni, akademik borcunu və s. informasiyaları vaxtında 
-                                əldə edə biləcəyiniz bir platforma olacaq. 
-                                Bununla yanaşı xəbər axışında universitetdə keçirilən tədbir lər, ölkədə və dünyada keçirilən yarışlar barədə məlumat ala 
-                                bilcəksiniz. 
-                                Dostlarınızla əlaqə saxlamağınızı və universitetdəki maraqlı 
-                                klub və paylaşımları izləməyinizi təmin edən bu tətbiq, univer sitet təcrübənizi daha sosial və inteqrasiya olunmuş bir mü-
-                                hitə çevirir.
-                                Biz bu mobil aplikasiyamızı Texnoparkda proqramlaşdırırıq.
-                                Əgər sizin də proqramlaşdırma bilginiz və bu tərz layihəniz 
-                                varsa, Texnoparkımıza müraciət edərək reallaşdıra bilərsiniz.
-                            </p>
-                            <div class="d-flex justify-content-center">
-                            <a href="#" class="text-decoration-none see_more_color">Davamı ></a>
-                        </div>
+            `;
+
+            startupsItems.forEach(item => {
+                const cardHtml = `
+                    <div class="col-lg-4 col-md-4 mb-4 justify-content-beetwen">
+                        <div class="card p-3 rounded-3 max-height-for-startups-item">
+                            <img src="${item.imageUrl}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title semibold_font_for_startups_item_title_text">${item.title}</h5>
+                                <p class="card-text medium_text_for_startups_item_description startups_description_color">
+                                    ${item.description}
+                                </p>
+                                <div class="d-flex justify-content-center">
+                                <a href="${item.moreUrl}" class="text-decoration-none see_more_color">Davamı ></a>
+                            </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="card p-3 rounded-3 max-height-for-news-item">
-                        <img src="../images/mainPageImages/news/wcuapp.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title semibold_font_for_news_item_title_text">WCU Mobile</h5>
-                            <p class="card-text medium_text_for_news_item_description news_description_color">
-                                Biz, bu tətbiqi hazırlamaqla tələbələrimizin tədris keyfiyyətini 
-                                yaxşılaşdırmağı hədəfləyirik. Dekanlıq, müəllim, tələbə kom munikasiyasını, dəyişən dərs proqramını, gündəlik qiymətləri ni, ÜOMG-ni, akademik borcunu və s. informasiyaları vaxtında 
-                                əldə edə biləcəyiniz bir platforma olacaq. 
-                                Bununla yanaşı xəbər axışında universitetdə keçirilən tədbir lər, ölkədə və dünyada keçirilən yarışlar barədə məlumat ala 
-                                bilcəksiniz. 
-                                Dostlarınızla əlaqə saxlamağınızı və universitetdəki maraqlı 
-                                klub və paylaşımları izləməyinizi təmin edən bu tətbiq, univer sitet təcrübənizi daha sosial və inteqrasiya olunmuş bir mü-
-                                hitə çevirir.
-                                Biz bu mobil aplikasiyamızı Texnoparkda proqramlaşdırırıq.
-                                Əgər sizin də proqramlaşdırma bilginiz və bu tərz layihəniz 
-                                varsa, Texnoparkımıza müraciət edərək reallaşdıra bilərsiniz.
-                            </p>
-                            <div class="d-flex justify-content-center">
-                            <a href="#" class="text-decoration-none see_more_color">Davamı ></a>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="card p-3 rounded-3 max-height-for-news-item">
-                        <img src="../images/mainPageImages/news/wcuapp.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title semibold_font_for_news_item_title_text">WCU Mobile</h5>
-                            <p class="card-text medium_text_for_news_item_description news_description_color">
-                                Biz, bu tətbiqi hazırlamaqla tələbələrimizin tədris keyfiyyətini 
-                                yaxşılaşdırmağı hədəfləyirik. Dekanlıq, müəllim, tələbə kom munikasiyasını, dəyişən dərs proqramını, gündəlik qiymətləri ni, ÜOMG-ni, akademik borcunu və s. informasiyaları vaxtında 
-                                əldə edə biləcəyiniz bir platforma olacaq. 
-                                Bununla yanaşı xəbər axışında universitetdə keçirilən tədbir lər, ölkədə və dünyada keçirilən yarışlar barədə məlumat ala 
-                                bilcəksiniz. 
-                                Dostlarınızla əlaqə saxlamağınızı və universitetdəki maraqlı 
-                                klub və paylaşımları izləməyinizi təmin edən bu tətbiq, univer sitet təcrübənizi daha sosial və inteqrasiya olunmuş bir mü-
-                                hitə çevirir.
-                                Biz bu mobil aplikasiyamızı Texnoparkda proqramlaşdırırıq.
-                                Əgər sizin də proqramlaşdırma bilginiz və bu tərz layihəniz 
-                                varsa, Texnoparkımıza müraciət edərək reallaşdıra bilərsiniz.
-                            </p>
-                            <div class="d-flex justify-content-center">
-                            <a href="#" class="text-decoration-none see_more_color">Davamı ></a>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="card p-3 rounded-3 max-height-for-news-item">
-                        <img src="../images/mainPageImages/news/wcuapp.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title semibold_font_for_news_item_title_text">WCU Mobile</h5>
-                            <p class="card-text medium_text_for_news_item_description news_description_color">
-                                Biz, bu tətbiqi hazırlamaqla tələbələrimizin tədris keyfiyyətini 
-                                yaxşılaşdırmağı hədəfləyirik. Dekanlıq, müəllim, tələbə kom munikasiyasını, dəyişən dərs proqramını, gündəlik qiymətləri ni, ÜOMG-ni, akademik borcunu və s. informasiyaları vaxtında 
-                                əldə edə biləcəyiniz bir platforma olacaq. 
-                                Bununla yanaşı xəbər axışında universitetdə keçirilən tədbir lər, ölkədə və dünyada keçirilən yarışlar barədə məlumat ala 
-                                bilcəksiniz. 
-                                Dostlarınızla əlaqə saxlamağınızı və universitetdəki maraqlı 
-                                klub və paylaşımları izləməyinizi təmin edən bu tətbiq, univer sitet təcrübənizi daha sosial və inteqrasiya olunmuş bir mü-
-                                hitə çevirir.
-                                Biz bu mobil aplikasiyamızı Texnoparkda proqramlaşdırırıq.
-                                Əgər sizin də proqramlaşdırma bilginiz və bu tərz layihəniz 
-                                varsa, Texnoparkımıza müraciət edərək reallaşdıra bilərsiniz.
-                            </p>
-                            <div class="d-flex justify-content-center">
-                            <a href="#" class="text-decoration-none see_more_color">Davamı ></a>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                `;
+        
+                startupsCards.innerHTML += cardHtml;
+            });
+        </script>
         
     </main>
 
@@ -163,8 +113,7 @@
     <script src="../js/topitems/navbar.js"></script> <!-- Navbar Element -->
     <script src="../js/topitems/footer.js"></script> <!-- Footer Element -->
 
-    <script src="../js/js/charlimitAndPicSizeForProjects.js"></script>
-    <script src="../js/js/charlimitForNews.js"></script>
+    <script src="../js/js/charLimitForStartups.js"></script>
     
 </body>
 </html>
