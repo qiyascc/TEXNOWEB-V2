@@ -83,3 +83,9 @@ body {
 .form_submit_button_background_color {
     background-color: var(--main-color-texnopark) !important;
 }
+.startup_banner_description_color {
+    color: var(--texno-gray-color);
+}
+.startups_description_color {
+    color: var(--texno-gray-color);
+}

@@ -238,3 +238,28 @@
     font-weight: 500;
     font-size: 14px;
 }
+.semibold_font_for_startup_banner_text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+}
+.semibold_font_for_startup_banner_description_text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+.bold_font_for_startups_title_text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+}
+.semibold_font_for_startups_item_title_text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+.medium_text_for_startups_item_description {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
