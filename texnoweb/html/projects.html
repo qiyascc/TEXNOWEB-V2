@@ -36,15 +36,15 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-2 margin_top_for_projects_container text-center">
+            <div class="row mt-2 text-center">
                 <div class="col-md-5 mx-auto">
-                    <button onclick="filterProjects('all')" class="btn btn-outline-secondary m-1">All</button>
-                    <button onclick="filterProjects('software')" class="btn btn-outline-secondary m-1">Software</button>
-                    <button onclick="filterProjects('hardware')" class="btn btn-outline-secondary m-1">Hardware</button>
-                    <button onclick="filterProjects('biology')" class="btn btn-outline-secondary m-1">Biology</button>
+                    <button id="btn-all" onclick="filterProjects('all')" class="btn btn-category m-1 light_font_for_projects_category_tabs">All</button>
+                    <button id="btn-software" onclick="filterProjects('software')" class="btn btn-category m-1 light_font_for_projects_category_tabs">Software</button>
+                    <button id="btn-hardware" onclick="filterProjects('hardware')" class="btn btn-category m-1 light_font_for_projects_category_tabs">Hardware</button>
+                    <button id="btn-biology" onclick="filterProjects('biology')" class="btn btn-category m-1 light_font_for_projects_category_tabs">Biology</button>
                 </div>
             </div>
-            <div class="row mt-4 margin_top_for_projects_container" id="projects-row">
+            <div class="row margin_top_for_projects_container" id="projects-row">
             </div>
         </div>
 
@@ -116,6 +116,9 @@
         const projectsRow = document.getElementById('projects-row');
 
         function filterProjects(category) {
+            document.querySelectorAll('.btn-category').forEach(btn => btn.classList.remove('active'));
+            document.getElementById(`btn-${category}`).classList.add('active');
+
             const filteredProjects = projectsItems.filter(item => category === 'all' || item.category === category);
             const projectsRow = document.getElementById('projects-row');
             projectsRow.innerHTML = '';
@@ -125,7 +128,12 @@
                     <div class="card p-3 rounded-3 max-height-for-projects-item">
                         <div class="card-header">
                             <img src="${item.image}" class="card-img-top" alt="...">
-                            <h5 class="card-title semibold_font_for_projects_item_title_text">${item.title}</h5>
+                        </div>
+                        <div class="title-icon-container">
+                            <i class="texno-${item.category}-icon texno-icon"></i>
+                            <h5 class="card-title semibold_font_for_projects_item_title_text">
+                                ${item.title}
+                            </h5>
                         </div>
                         <div class="card-body">
                             <p class="card-text medium_text_for_projects_item_description projects_description_color">
@@ -137,7 +145,9 @@
                         </div>
                     </div>
                 </div>
+
                 `;
+
                 projectsRow.innerHTML += projectsItemHtml;
             });
             var textElements = document.querySelectorAll('.medium_text_for_projects_item_description');
@@ -148,7 +158,7 @@
                     element.innerText = truncatedText;
                 }
             });
-        }   
+        } 
 
 
         

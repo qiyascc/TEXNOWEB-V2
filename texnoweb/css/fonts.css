@@ -24,7 +24,12 @@
     font-weight: 300;
     font-style: normal;
 }
-
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter/static/Inter-Light.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
 
 .medium_texno_text_for_up_navbar {
     font-family: 'Inter', sans-serif;
@@ -259,6 +264,26 @@
     font-size: 20px;
 }
 .medium_text_for_startups_item_description {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+.light_font_for_projects_category_tabs {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+}
+.semibold_font_for_projects_item_title_text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+.medium_text_for_projects_item_description {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+.medium_font_for_projects_detail_description {
     font-family: 'Inter', sans-serif;
     font-weight: normal;
     font-size: 14px;
