@@ -1,0 +1,46 @@
+.margin_top_for_startups {
+    margin-top: 5%;
+}
+.search_bar_for_startups_page {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.search_button_for_search_startups_in_startups_page {
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+}
+.card-header {
+    background: transparent !important;
+    border: none !important;
+}
+/* @media (max-width: 767.98px) {
+    .card {
+        flex-direction: column;
+    }
+    .card-header {
+        display: flex;
+        align-items: center;
+        background: transparent !important;
+    }
+    .card img {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: calc(0.375rem + 1px);
+        width: 30%;
+        height: auto;
+        object-fit: cover;
+    }
+    .card-title {
+        margin-left: 5%;
+    }
+    .card-body {
+        padding: 0;
+        padding-top: 1rem;
+    }
+    .card-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+} */
