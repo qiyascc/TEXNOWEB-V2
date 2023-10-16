@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/colors.css">
+    <link rel="stylesheet" href="../css/navbarandFooter.css">
+
+    <link rel="stylesheet" href="../css/learning/custom.css">
+
+
+    <title>Academy | TexnoPark</title>
+
+    <style>
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .scrollable-row {
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        .scrollable-row .col-md-4 {
+            display: inline-block;
+            float: none;
+        }
+        .w-85 {
+            width: 85% !important;
+        }
+        #secondary-navbar-list li {
+            margin-right: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Navbar elements -->
+    <navbar-element></navbar-element>
+
+    <main>
+
+        <div class="banner container-fluid">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-5 text-container order-2 order-md-1">
+                    <h1 class="mb-3 semibold_font_for_texno-learning_banner_text mt-3">TexnoPark Learning</h1>
+                    <p
+                        class="semibold_font_for_texno-learning_banner_description_text texno-learning_banner_description_color">
+                        Qərbi Kaspi Universitetinin yeni Startap Mərkəzi, gələcəyin lider sahibkarlarını indidən
+                        formalaşdırır! Burada, yenilikçi fikirlərinizi reallaşdırmaq şansına sahib olacaq, sektorun
+                        liderləri və təcrübəli mentorlarla bir araya gələrək vizyonunuzu həyata keçirə biləcəksiniz.
+                        Bura yalnız bir fikri olanlar üçün deyil, həmçinin də, bu fikirləri reallığa çevirmək üçün lazım
+                        olan vasitələrə, resurslara və biliyə sahib olmaq istəyənlər üçün ideal platformadır. Gəlin,
+                        dünyanı dəyişdirəcək ideyalarınızı birlikdə həyata keçiək,.
+                    </p>
+                    <!-- <a class="btn texnopark_white_text texnopark_main_background_color register_button_navbar" href="#"
+                        id="registerButton" style="padding: 12px 32px;">Qeydiyyat</a> -->
+                </div>
+                <div class="col-md-5 order-1 order-md-2">
+                    <img class="img-fluid mt-5 texno-learning_banner_image_left_margin"
+                        src="../images/startupPageImages/startupbanner.png" alt=""
+                        style="width: 100%; height: 100%; border-radius: 7px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-4 w-85 container-fluid">
+            <div class="row align-items-center justify-content-center">
+                <h2>Texnopark Learning’de siz hangi alanları öğrenebilirsiniz?</h2>
+            </div>
+            <div class="row row align-items-center justify-content-center">
+                <!-- HTML -->
+                <div class="secondary-navbar navbar-expand-lg bg-transparent">
+                    <div class="container-fluid mt-4">
+                        <div class="collapse navbar-collapse">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="secondary-navbar-list">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="container-fluid mt-4" id="content-area">
+            </div>
+        </div>
+        
+    
+        
+
+
+
+
+    </main>
+
+    <!-- Footer elements -->
+    <footer-element></footer-element>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript">
+        const tabs = [
+            {
+                title: 'Frontend',
+                tabContentTitle: 'FrontEnd Developer olmaq',
+                description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id. Praesent lorem orci, mattis non efficitur id, ultricies vel nibh. Sed volutpat lacus vitae gravida viverra. Fusce vel tempor elit. Proin tempus,.',
+                cards: [
+                    { title: 'JavaScript qaynaq (Türkcə)', imgSrc: '../images/mainPageImages/banner/texnoBanner.png', text: 'https://www.youtube.com/watch?v=F8ucFhzSoPg&list=PLdYLIhwDacdFC-Yrz7hscxwmOpuhnMigs' },
+                ]
+            },
+            {
+                title: 'Backend',
+                tabContentTitle: 'BackEnd Developer olmaq',
+                description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id. Praesent lorem orci, mattis non efficitur id, ultricies vel nibh. Sed volutpat lacus vitae gravida viverra. Fusce vel tempor elit. Proin tempus,.',
+                cards: []
+            },
+            {
+                title: 'Mobile',
+                tabContentTitle: 'Mobile Developer olmaq',
+                description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id. Praesent lorem orci, mattis non efficitur id, ultricies vel nibh. Sed volutpat lacus vitae gravida viverra. Fusce vel tempor elit. Proin tempus,.',
+                cards: []
+            },
+            {
+                title: 'Graphic Deisgn',
+                tabContentTitle: 'Qrafik dizayner olmaq',
+                description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id. Praesent lorem orci, mattis non efficitur id, ultricies vel nibh. Sed volutpat lacus vitae gravida viverra. Fusce vel tempor elit. Proin tempus,.',
+                cards: []
+            },
+            {
+                title: 'Robotics',
+                tabContentTitle: 'Robototexnika mühəndisi olmaq',
+                description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id. Praesent lorem orci, mattis non efficitur id, ultricies vel nibh. Sed volutpat lacus vitae gravida viverra. Fusce vel tempor elit. Proin tempus,.',
+                cards: []
+            },
+            {
+                title: 'AI',
+                tabContentTitle: 'Aİ developer olmaq',
+                description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id. Praesent lorem orci, mattis non efficitur id, ultricies vel nibh. Sed volutpat lacus vitae gravida viverra. Fusce vel tempor elit. Proin tempus,.',
+                cards: []
+            },
+            {
+                title: 'Game',
+                tabContentTitle: 'Game Developer olmaq',
+                description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id. Praesent lorem orci, mattis non efficitur id, ultricies vel nibh. Sed volutpat lacus vitae gravida viverra. Fusce vel tempor elit. Proin tempus,.',
+                cards: []
+            },
+            {
+                title: 'UX/Uİ Deisgn',
+                tabContentTitle: 'UX/Uİ dizayner olmaq',
+                description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id. Praesent lorem orci, mattis non efficitur id, ultricies vel nibh. Sed volutpat lacus vitae gravida viverra. Fusce vel tempor elit. Proin tempus,.',
+                cards: []
+            },
+            {
+                title: 'DevOps',
+                tabContentTitle: 'Sistem Adminstrator/DevOps olmaq',
+                description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id. Praesent lorem orci, mattis non efficitur id, ultricies vel nibh. Sed volutpat lacus vitae gravida viverra. Fusce vel tempor elit. Proin tempus,.',
+                cards: []
+            },
+        ];
+
+        const navbarList = document.getElementById('secondary-navbar-list');
+        const contentArea = document.getElementById('content-area');
+
+        function loadTab(tabIndex) {
+            const tab = tabs[tabIndex];
+            let contentHtml = `
+        <h2>${tab.title} Developer olmaq.</h2>
+        <p style="max-width: 1000px;">${tab.description}</p>
+        <!-- <button class="btn btn-primary">Qeydiyyat</button> -->
+        <div class="scrollable-row mt-4">
+    `;
+
+            if (tab.cards.length === 0) {
+                contentHtml += `
+            <div class="alert alert-info" role="alert">
+                Buraya hele  ki qaynaq elave olunmayib.
+            </div>
+        `;
+            } else {
+                tab.cards.forEach(card => {
+                    let truncatedText = card.text.substring(0, 20) + '...';
+                    contentHtml += `
+                <div class="col-md-4 me-5">
+                    <div class="card">
+                        <img src="${card.imgSrc}" class="card-img-top" alt="${card.title}">
+                        <div class="card-body">
+                            <h5 class="card-title">${card.title}</h5>
+                            <p class="card-text">${truncatedText}</p>
+                            <a href="#" class="btn btn-primary">Davamı</a>
+                        </div>
+                    </div>
+                </div>
+            `;
+                });
+            }
+
+            contentHtml += '</div>';
+            contentArea.innerHTML = contentHtml;
+        }
+
+
+        tabs.forEach((tab, index) => {
+            const listItem = document.createElement('li');
+            listItem.className = 'nav-item';
+
+            const link = document.createElement('a');
+            link.className = 'nav-link';
+            link.href = '';
+            link.textContent = tab.title;
+            link.onclick = () => loadTab(index);
+
+            listItem.appendChild(link);
+            navbarList.appendChild(listItem);
+        });
+        loadTab(0);
+    </script>
+
+    <!-- Top Items -->
+    <script src="../js/topitems/title.js"></script> <!-- Changeable title -->
+    <script src="../js/topitems/navbar.js"></script> <!-- Navbar Element -->
+    <script src="../js/topitems/footer.js"></script> <!-- Footer Element -->
+
+</body>
+
+</html>
