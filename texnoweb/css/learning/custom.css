@@ -1,25 +1,25 @@
 .margin_top_for_learning {
-    margin-top: 8%;
+    margin-top: 8% !important;
 }
 
 .margin_top_for_news_container {
-    margin-top: 5%;
+    margin-top: 5% !important;
 }
 
 .card-title {
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 18px !important;
+    font-weight: bold !important;
 }
 
 .scrollable-row {
-    display: flex;
-    overflow-x: auto;
-    white-space: nowrap;
+    display: flex !important;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
 }
 
 .scrollable-row .col-md-4 {
-    display: inline-block;
-    float: none;
+    display: inline-block !important;
+    float: none !important;
 }
 
 .w-85 {
@@ -27,7 +27,7 @@
 }
 
 #secondary-navbar-list li {
-    margin-right: 16px;
+    margin-right: 16px !important;
 }
 
 .swal2-html-container {
@@ -40,4 +40,15 @@
 
 .swal2-title {
     text-align: left !important;
+}
+.swal2-popup {
+    border-radius: 16px !important;
+}
+.secondary-navbar .navbar-collapse {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.secondary-navbar .navbar-nav {
+    flex-wrap: nowrap;
 }

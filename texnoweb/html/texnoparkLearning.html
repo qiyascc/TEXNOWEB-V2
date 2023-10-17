@@ -31,7 +31,7 @@
                 <div class="col-md-5 text-container order-2 order-md-1">
                     <h1 class="mb-3 semibold_font_for_learning_banner_title mt-3">TexnoPark Learning</h1>
                     <p
-                        class="semibold_font_for_texno_learning_banner_description_text texno-learning_banner_description_color">
+                        class="semibold_font_for_texno_learning_banner_description_text learning_banner_content_text_color">
                         Qərbi Kaspi Universitetinin yeni Startap Mərkəzi, gələcəyin lider sahibkarlarını indidən
                         formalaşdırır! Burada, yenilikçi fikirlərinizi reallaşdırmaq şansına sahib olacaq, sektorun
                         liderləri və təcrübəli mentorlarla bir araya gələrək vizyonunuzu həyata keçirə biləcəksiniz.
@@ -55,14 +55,15 @@
                 <h2 class="semibold_font_for_texno_learning_tab_title">Texnopark Learning’də siz hansı sahələri öyrənə bilərsiniz?</h2>
             </div>
             <div class="row row align-items-center justify-content-center">
-                <div class="secondary-navbar navbar-expand-lg bg-transparent">
+                <div class="secondary-navbar navbar-expand bg-transparent">
                     <div class="container-fluid mt-4">
                         <div class="collapse navbar-collapse">
-                            <ul class="navbar-nav me-auto mb-2 bold_font_for_tab_item_title" id="secondary-navbar-list" style="border-bottom: 1px solid #888;">
+                            <ul class="navbar-nav me-auto mb-2 bold_font_for_tab_item_title learning_page_tab_title_color" id="secondary-navbar-list" style="border-bottom: 1px solid #888;">
                             </ul>
                         </div>
                     </div>
                 </div>
+                
 
             </div>
 
@@ -154,7 +155,7 @@
             const tab = tabs[tabIndex];
             let contentHtml = `
         <h2 class="bold_font_for_tab_item_content_title">${tab.title} Developer olmaq.</h2>
-        <p style="max-width: 1000px;" class="regular_font_for_tab_item_contant_description">${tab.description}</p>
+        <p style="max-width: 1000px;" class="regular_font_for_tab_item_contant_description learning_tab_item_content_description_color">${tab.description}</p>
         <!-- <button class="btn btn-primary">Qeydiyyat</button> -->
         <div class="scrollable-row mt-4">
     `;
@@ -162,19 +163,19 @@
             if (tab.cards.length === 0) {
                 contentHtml += `
             <div class="alert alert-info" role="alert">
-                Buraya hele  ki qaynaq elave olunmayib.
+                Hələ ki, bir qaynaq əlavə olunmayıb.
             </div>
         `;
             } else {
                 tab.cards.forEach(card => {
-                    let truncatedText = card.text.substring(0, 20) + '...';
+                    let truncatedText = card.text.substring(0, 30) + '...';
                     contentHtml += `
                         <div class="col-md-4 me-5">
                             <div class="card">
                                 <img src="${card.imgSrc}" class="card-img-top" alt="${card.title}">
                                 <div class="card-body">
                                     <h5 class="card-title medium_text_for_tab_item_content_card_item_title">${card.title}</h5>
-                                    <p class="card-text regular_font_for_tab_item_content_card_item_description">${truncatedText}</p>
+                                    <p class="card-text regular_font_for_tab_item_content_card_item_description learning_card_content_description_text_color">${truncatedText}</p>
                                     <div class="d-flex justify-content-center">
                                         <a href="##" class="text-decoration-none see_more_color" onclick="showPopup('${card.title}', '${card.text}', '${card.type}', '${card.link}')">Davamı ></a>
                                     </div>
@@ -193,7 +194,7 @@
             let buttonText = type == '1' ? 'Yüklə' : 'İzlə';
             Swal.fire({
                 title: cardTitle,
-                html: `<div class="text-left regular_text_for_popup_item_description">${cardText}</div>`,
+                html: `<div class="text-left regular_text_for_popup_item_description learning_popup_content_description_text_color">${cardText}</div>`,
                 confirmButtonText: buttonText,
                 confirmButtonColor: '#4764bf',
                 customClass: {
@@ -202,7 +203,7 @@
                 },
                 buttonsStyling: false,
                 showCloseButton: true,
-                width: '400px'
+                width: '600px',
             }).then((result) => {
                 if (result.isConfirmed) {
                     window.location.href = link;

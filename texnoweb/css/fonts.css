@@ -321,7 +321,7 @@
 .medium_text_for_tab_item_content_card_item_title {
     font-family: 'Inter', sans-serif;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 10vh;
 }
 .regular_font_for_tab_item_content_card_item_description {
     font-family: 'Inter', sans-serif;

@@ -5,7 +5,7 @@
     --texno_color: #4764BF;
     --register_button_hover: #283E85;
     --texno-gray-color: #888888;
-    --copyright_and_datetime: #BBBBBB;
+    --texno_gray_3: #BBBBBB;
     --texno_gray_2: #333333;
     --texno_blue_3: #3DB2BF;
     --texno_blue_3_dark_version: #197d88;
@@ -43,7 +43,7 @@ body {
 }
 
 .copyright_and_datetime_color {
-    color: var(--copyright_and_datetime);
+    color: var(--texno_gray_3);
 }
 .texno_banner_text_color {
     color: var(--texno_color);
@@ -61,7 +61,7 @@ body {
     color: var(--texno_blue_3);
 }
 .news_date_color {
-    color: var(--copyright_and_datetime);
+    color: var(--texno_gray_3);
 }
 .projects_photo_button {
     background-color: var(--texno_blue_3);
@@ -98,5 +98,20 @@ body {
     color: white;
 }
 .projects_description_color {
+    color: var(--texno-gray-color);
+}
+.learning_banner_content_text_color {
+    color: var(--texno-gray-color);
+}
+.learning_page_tab_title_color {
+    color: var(--texno_gray_3);
+}
+.learning_tab_item_content_description_color {
+    color: var(--texno_gray_2);
+}
+.learning_card_content_description_text_color {
+    color: var(--texno-gray-color);
+}
+.learning_popup_content_description_text_color {
     color: var(--texno-gray-color);
 }
