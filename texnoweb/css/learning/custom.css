@@ -1,6 +1,43 @@
 .margin_top_for_learning {
     margin-top: 8%;
 }
+
 .margin_top_for_news_container {
     margin-top: 5%;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.scrollable-row {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.scrollable-row .col-md-4 {
+    display: inline-block;
+    float: none;
+}
+
+.w-85 {
+    width: 85% !important;
+}
+
+#secondary-navbar-list li {
+    margin-right: 16px;
+}
+
+.swal2-html-container {
+    text-align: left !important;
+}
+
+.swal2-header {
+    text-align: left !important;
+}
+
+.swal2-title {
+    text-align: left !important;
 }

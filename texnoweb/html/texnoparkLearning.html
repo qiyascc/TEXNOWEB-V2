@@ -18,32 +18,6 @@
 
     <title>Academy | TexnoPark</title>
 
-    <style>
-        .card-title {
-            font-size: 18px;
-            font-weight: bold;
-        }
-
-        .scrollable-row {
-            display: flex;
-            overflow-x: auto;
-            white-space: nowrap;
-        }
-
-        .scrollable-row .col-md-4 {
-            display: inline-block;
-            float: none;
-        }
-
-        .w-85 {
-            width: 85% !important;
-        }
-
-        #secondary-navbar-list li {
-            margin-right: 10px;
-        }
-    </style>
-
 </head>
 
 <body>
@@ -52,12 +26,12 @@
 
     <main>
 
-        <div class="banner container-fluid">
+        <div class="container-fluid">
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-5 text-container order-2 order-md-1">
-                    <h1 class="mb-3 semibold_font_for_texno-learning_banner_text mt-3">TexnoPark Learning</h1>
+                    <h1 class="mb-3 semibold_font_for_learning_banner_title mt-3">TexnoPark Learning</h1>
                     <p
-                        class="semibold_font_for_texno-learning_banner_description_text texno-learning_banner_description_color">
+                        class="semibold_font_for_texno_learning_banner_description_text texno-learning_banner_description_color">
                         Qərbi Kaspi Universitetinin yeni Startap Mərkəzi, gələcəyin lider sahibkarlarını indidən
                         formalaşdırır! Burada, yenilikçi fikirlərinizi reallaşdırmaq şansına sahib olacaq, sektorun
                         liderləri və təcrübəli mentorlarla bir araya gələrək vizyonunuzu həyata keçirə biləcəksiniz.
@@ -69,7 +43,7 @@
                         id="registerButton" style="padding: 12px 32px;">Qeydiyyat</a>
                 </div>
                 <div class="col-md-5 order-1 order-md-2">
-                    <img class="img-fluid mt-5 texno-learning_banner_image_left_margin"
+                    <img class="img-fluid mt-5"
                         src="../images/startupPageImages/startupbanner.png" alt=""
                         style="width: 100%; height: 100%; border-radius: 7px;">
                 </div>
@@ -78,14 +52,13 @@
 
         <div class="margin_top_for_learning w-85 container-fluid">
             <div class="row align-items-center justify-content-center">
-                <h2>Texnopark Learning’də siz hansı sahələri öyrənə bilərsiniz?</h2>
+                <h2 class="semibold_font_for_texno_learning_tab_title">Texnopark Learning’də siz hansı sahələri öyrənə bilərsiniz?</h2>
             </div>
             <div class="row row align-items-center justify-content-center">
                 <div class="secondary-navbar navbar-expand-lg bg-transparent">
                     <div class="container-fluid mt-4">
                         <div class="collapse navbar-collapse">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="secondary-navbar-list"
-                                style="border-bottom: 1px solid #888;">
+                            <ul class="navbar-nav me-auto mb-2 bold_font_for_tab_item_title" id="secondary-navbar-list" style="border-bottom: 1px solid #888;">
                             </ul>
                         </div>
                     </div>
@@ -111,6 +84,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.js"></script>
+    <!-- AIzaSyA-s4wXeWICq55UMdTJpzvkgKmvjte9zC4 -->
 
     <script type="text/javascript">
         const tabs = [
@@ -179,8 +153,8 @@
         function loadTab(tabIndex) {
             const tab = tabs[tabIndex];
             let contentHtml = `
-        <h2>${tab.title} Developer olmaq.</h2>
-        <p style="max-width: 1000px;">${tab.description}</p>
+        <h2 class="bold_font_for_tab_item_content_title">${tab.title} Developer olmaq.</h2>
+        <p style="max-width: 1000px;" class="regular_font_for_tab_item_contant_description">${tab.description}</p>
         <!-- <button class="btn btn-primary">Qeydiyyat</button> -->
         <div class="scrollable-row mt-4">
     `;
@@ -199,8 +173,8 @@
                             <div class="card">
                                 <img src="${card.imgSrc}" class="card-img-top" alt="${card.title}">
                                 <div class="card-body">
-                                    <h5 class="card-title">${card.title}</h5>
-                                    <p class="card-text">${truncatedText}</p>
+                                    <h5 class="card-title medium_text_for_tab_item_content_card_item_title">${card.title}</h5>
+                                    <p class="card-text regular_font_for_tab_item_content_card_item_description">${truncatedText}</p>
                                     <div class="d-flex justify-content-center">
                                         <a href="##" class="text-decoration-none see_more_color" onclick="showPopup('${card.title}', '${card.text}', '${card.type}', '${card.link}')">Davamı ></a>
                                     </div>
@@ -219,12 +193,12 @@
             let buttonText = type == '1' ? 'Yüklə' : 'İzlə';
             Swal.fire({
                 title: cardTitle,
-                html: `<div style="text-align: left;">${cardText}</div>`,
+                html: `<div class="text-left regular_text_for_popup_item_description">${cardText}</div>`,
                 confirmButtonText: buttonText,
-                confirmButtonColor: '#0d6efd',
+                confirmButtonColor: '#4764bf',
                 customClass: {
-                    confirmButton: 'btn btn-primary',
-                    title: 'font_size_for_au'
+                    confirmButton: 'btn texnopark_white_text texnopark_main_background_color',
+                    title: 'medium_text_for_popup_title',
                 },
                 buttonsStyling: false,
                 showCloseButton: true,

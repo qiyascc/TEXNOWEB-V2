@@ -288,3 +288,53 @@
     font-weight: normal;
     font-size: 14px;
 }
+.semibold_font_for_learning_banner_title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+}
+.semibold_font_for_texno_learning_banner_description_text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+.semibold_font_for_texno_learning_tab_title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+}
+.bold_font_for_tab_item_title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+.bold_font_for_tab_item_content_title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+.regular_font_for_tab_item_contant_description {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+.medium_text_for_tab_item_content_card_item_title {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+.regular_font_for_tab_item_content_card_item_description {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+}
+.medium_text_for_popup_title {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+}
+.regular_text_for_popup_item_description {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
