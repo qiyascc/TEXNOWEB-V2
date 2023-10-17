@@ -14,13 +14,19 @@
 body {
     background-color: var(--main-color-texnopark);
 }
-.texnopark_white_text {
+
+.texnopark_white_text,
+.register_button_navbar:hover,
+.register_button_navbar:focus,
+.projects_photo_button,
+.projects_photo_button:hover {
     color: var(--main-color-texnopark);
 }
 
 .texnopark_main_background_color {
     background-color: var(--texno_color);
 }
+
 .navbar_up_text_color {
     color: var(--navbar_up_text);
 }
@@ -29,89 +35,63 @@ body {
     color: var(--navbar_down_text);
 }
 
-.register_button_navbar:hover {
+.register_button_navbar:hover,
+.register_button_navbar:focus,
+.projects_photo_button:hover {
     background-color: var(--register_button_hover);
-    color: var(--main-color-texnopark);
 }
 
-.register_button_navbar:focus {
-    background-color: var(--register_button_hover);
-    color: var(--main-color-texnopark);
-}
-.footer_link_color {
+.footer_link_color,
+.contest_title_color,
+.news_description_color,
+.projects_item_description_text_color,
+.contact_page_social_color,
+.contact_form_placeholder_color,
+.startup_banner_description_color,
+.startups_description_color,
+.learning_banner_content_text_color,
+.learning_card_content_description_text_color,
+.learning_popup_content_description_text_color {
     color: var(--texno-gray-color);
 }
 
-.copyright_and_datetime_color {
+.copyright_and_datetime_color,
+.news_date_color,
+.learning_page_tab_title_color {
     color: var(--texno_gray_3);
 }
-.texno_banner_text_color {
-    color: var(--texno_color);
-}
-.contest_title_color {
-    color: var(--texno-gray-color);
-}
-.news_title_color {
+
+.texno_banner_text_color,
+.news_title_color,
+.learning_tab_item_content_description_color {
     color: var(--texno_gray_2);
 }
-.news_description_color {
-    color: var(--texno-gray-color);
-}
+
 .see_more_color {
     color: var(--texno_blue_3);
 }
-.news_date_color {
-    color: var(--texno_gray_3);
-}
 .projects_photo_button {
     background-color: var(--texno_blue_3);
-    color: var(--main-color-texnopark);
 }
+
 .projects_photo_button:hover {
     background-color: var(--texno_blue_3_dark_version);
-    color: var(--main-color-texnopark);
 }
-.projects_item_description_text_color {
-    color: var(--texno-gray-color) !important;
-}
-.contact_page_social_color {
-    color: var(--texno-gray-color) !important;
-}
-.contact_form_placeholder_color {
-    color: var(--texno-gray-color) !important;
-}
-.form_submit_button_background_color {
-    background-color: var(--main-color-texnopark) !important;
-}
-.startup_banner_description_color {
-    color: var(--texno-gray-color);
-}
-.startups_description_color {
-    color: var(--texno-gray-color);
-}
+
 .btn-category {
     background-color: #E6EAF7;
     color: black;
 }
+
 .btn-category.active {
     background-color: #4764bf;
     color: white;
 }
+
 .projects_description_color {
     color: var(--texno-gray-color);
 }
-.learning_banner_content_text_color {
-    color: var(--texno-gray-color);
-}
-.learning_page_tab_title_color {
-    color: var(--texno_gray_3);
-}
-.learning_tab_item_content_description_color {
-    color: var(--texno_gray_2);
-}
-.learning_card_content_description_text_color {
-    color: var(--texno-gray-color);
-}
-.learning_popup_content_description_text_color {
-    color: var(--texno-gray-color);
+
+.form_submit_button_background_color {
+    background-color: var(--main-color-texnopark) !important;
 }
