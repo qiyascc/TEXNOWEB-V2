@@ -4,14 +4,12 @@
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Inter';
     src: url('../fonts/Inter/static/Inter-SemiBold.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Inter';
     src: url('../fonts/Inter/static/Inter-Bold.ttf') format('truetype');
@@ -31,310 +29,154 @@
     font-style: normal;
 }
 
-.medium_texno_text_for_up_navbar {
-    font-family: 'Inter', sans-serif;
-    font-weight: normal;
-    font-size: 12px;
-}
-
-.semibold_texno_text_down_navbar {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-}
-
-.bold_texno_text_footer {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-}
-
-.semibold_texno_text_footer {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-}
-
-.medium_texno_text_for_footer_copyright_text {
-    font-family: 'Inter', sans-serif;
-    font-weight: normal;
-    font-size: 14px;
-}
-
-.semibold_font_for_banner_text {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 28px;
-}
-
-.semibold_font_for_banner_text {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 2vw;
-}
-
-@media (max-width: 767px) {
-    .semibold_font_for_banner_text {
-        font-family: 'Inter', sans-serif;
-        font-weight: 500;
-        font-size: 5vw;
-    }
-}
-
-.semibold_font_for_banner_description_text {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-}
-@media (max-width: 767px) {
-    .semibold_font_for_banner_description_text {
-        font-family: 'Inter', sans-serif;
-        font-weight: 500;
-        font-size: 10px;
-    }
-}
-
-.semibold_font_for_contest_text {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-}
-
-.bold_font_for_news_title_text {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 28px;
-}
-
-.semibold_font_for_news_item_title_text {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-}
-.medium_text_for_news_item_description {
-    font-family: 'Inter', sans-serif;
-    font-weight: normal;
-    font-size: 12px;
-}
-.medium_text_for_news_item_date {
-    font-family: 'Inter', sans-serif;
-    font-weight: normal;
-    font-size: 14px;
-}
-.medium_text_for_big_see_more {
-    font-family: 'Inter', sans-serif;
-    font-weight: normal;
-    font-size: 20px;
-}
-
-.bold_font_for_projects_title_text {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 28px;
-}
-
-.projects_photo_button {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-}
-@media (max-width: 767px) {
-    .projects_photo_button {
-        font-family: 'Inter', sans-serif;
-        font-weight: 700;
-        font-size: 14px;
-    }
-}
-
-.semibold_font_for_projects_item_title_text {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-}
-@media (max-width: 767px) {
-    .semibold_font_for_projects_item_title_text {
-        font-family: 'Inter', sans-serif;
-        font-weight: 500;
-        font-size: 16px;
-    }
-}
-
-.medium__font_for_projects_item_description_text {
-    font-family: 'Inter', sans-serif;
-    font-weight: normal;
-    font-size: 14px;
-}
-
-@media (max-width: 767px) {
-    .medium__font_for_projects_item_description_text {
-        font-family: 'Inter', sans-serif;
-        font-weight: normal;
-        font-size: 10px;
-    }
-}
-
-.semibold_font_for_news_detail_header {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 28px;
-}
-.medium_font_for_news_detail_description {
-    font-family: 'Inter', sans-serif;
-    font-weight: normal;
-    font-size: 14px;
-}
-
-.bold_font_for_gallery_titles {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 28px;
-}
-.medium_font_for_gallery_descriptions {
-    font-family: 'Inter', sans-serif;
-    font-weight: normal;
-    font-size: 14px;
-}
-.semibold_font_for_gallery_buttons {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-}
-.bold_font_for_contact_us_title {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 28px;
-}
-@media (max-width: 767px) {
-    .bold_font_for_contact_us_title {
-        font-family: 'Inter', sans-serif;
-        font-weight: 700;
-        font-size: 24px;
-    }
-}
-.bold_font_for_faq_title {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 28px;
-}
-@media (max-width: 767px) {
-    .bold_font_for_faq_title {
-        font-family: 'Inter', sans-serif;
-        font-weight: 700;
-        font-size: 24px;
-    }
-}
-.bold_fot_for_faq_items_title {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-}
-.regular_font_for_faq_items_descriptions {
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-}
-.medium_font_for_contact_social {
-    font-family: 'Inter', sans-serif;
-    font-weight: normal;
-    font-size: 14px;
-}
-.semibold_font_for_contact_form_placeholder_text::placeholder {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-}
-.semibold_font_for_startup_banner_text {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 28px;
-}
-.semibold_font_for_startup_banner_description_text {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-}
-.bold_font_for_startups_title_text {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 28px;
-}
-.semibold_font_for_startups_item_title_text {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-}
-.medium_text_for_startups_item_description {
-    font-family: 'Inter', sans-serif;
-    font-weight: normal;
-    font-size: 14px;
-}
-.light_font_for_projects_category_tabs {
-    font-family: 'Inter', sans-serif;
-    font-weight: 200;
-    font-size: 14px;
-}
-.semibold_font_for_projects_item_title_text {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-}
-.medium_text_for_projects_item_description {
-    font-family: 'Inter', sans-serif;
-    font-weight: normal;
-    font-size: 14px;
-}
-.medium_font_for_projects_detail_description {
-    font-family: 'Inter', sans-serif;
-    font-weight: normal;
-    font-size: 14px;
-}
-.semibold_font_for_learning_banner_title {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 28px;
-}
-.semibold_font_for_texno_learning_banner_description_text {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-}
-.semibold_font_for_texno_learning_tab_title {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 28px;
-}
-.bold_font_for_tab_item_title {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-}
-.bold_font_for_tab_item_content_title {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-}
-.regular_font_for_tab_item_contant_description {
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    font-size: 14px;
-}
-.medium_text_for_tab_item_content_card_item_title {
-    font-family: 'Inter', sans-serif;
-    font-weight: normal;
-    font-size: 10vh;
-}
-.regular_font_for_tab_item_content_card_item_description {
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    font-size: 12px;
-}
+.font-normal, 
+.medium_texno_text_for_up_navbar, 
+.medium_texno_text_for_footer_copyright_text, 
+.medium_text_for_news_item_description, 
+.medium_text_for_news_item_date, 
+.medium_text_for_big_see_more, 
+.medium__font_for_projects_item_description_text, 
+.medium_font_for_news_detail_description, 
+.medium_font_for_gallery_descriptions, 
+.medium_font_for_contact_social, 
+.medium_text_for_startups_item_description, 
+.medium_text_for_projects_item_description, 
+.medium_font_for_projects_detail_description, 
+.medium_text_for_tab_item_content_card_item_title, 
 .medium_text_for_popup_title {
     font-family: 'Inter', sans-serif;
     font-weight: normal;
-    font-size: 20px;
 }
+.font-semibold, 
+.semibold_texno_text_down_navbar, 
+.semibold_texno_text_footer, 
+.semibold_font_for_banner_text, 
+.semibold_font_for_banner_description_text, 
+.semibold_font_for_contest_text, 
+.semibold_font_for_news_item_title_text, 
+.semibold_font_for_projects_item_title_text, 
+.semibold_font_for_news_detail_header, 
+.semibold_font_for_gallery_buttons, 
+.semibold_font_for_contact_form_placeholder_text::placeholder, 
+.semibold_font_for_startup_banner_text, 
+.semibold_font_for_startup_banner_description_text, 
+.semibold_font_for_startups_item_title_text, 
+.semibold_font_for_learning_banner_title, 
+.semibold_font_for_texno_learning_banner_description_text, 
+.semibold_font_for_texno_learning_tab_title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+.font-bold, 
+.bold_texno_text_footer, 
+.bold_font_for_news_title_text, 
+.bold_font_for_projects_title_text, 
+.projects_photo_button, 
+.bold_font_for_gallery_titles, 
+.bold_font_for_contact_us_title, 
+.bold_font_for_faq_title, 
+.bold_fot_for_faq_items_title, 
+.bold_font_for_startups_title_text, 
+.bold_font_for_tab_item_title, 
+.bold_font_for_tab_item_content_title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+.font-light, 
+.light_font_for_projects_category_tabs {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+}
+.font-regular, 
+.regular_font_for_faq_items_descriptions, 
+.regular_font_for_tab_item_contant_description, 
+.regular_font_for_tab_item_content_card_item_description, 
 .regular_text_for_popup_item_description {
     font-family: 'Inter', sans-serif;
     font-weight: 300;
+}
+.text-xs, 
+.semibold_font_for_banner_description_text, 
+.medium__font_for_projects_item_description_text {
+    font-size: 10px;
+}
+.text-sm, 
+.medium_texno_text_for_up_navbar, 
+.medium_text_for_news_item_description, 
+.regular_font_for_tab_item_content_card_item_description {
+    font-size: 12px;
+}
+.text-md, 
+.semibold_texno_text_footer, 
+.medium_texno_text_for_footer_copyright_text, 
+.semibold_font_for_banner_description_text, 
+.semibold_font_for_contest_text, 
+.medium_text_for_news_item_date, 
+.projects_photo_button, 
+.medium__font_for_projects_item_description_text, 
+.medium_font_for_news_detail_description, 
+.medium_font_for_gallery_descriptions, 
+.semibold_font_for_gallery_buttons, 
+.medium_font_for_contact_social, 
+.semibold_font_for_contact_form_placeholder_text::placeholder, 
+.semibold_font_for_startup_banner_description_text, 
+.medium_text_for_startups_item_description, 
+.light_font_for_projects_category_tabs, 
+.medium_text_for_projects_item_description, 
+.medium_font_for_projects_detail_description, 
+.semibold_font_for_texno_learning_banner_description_text, 
+.regular_font_for_tab_item_contant_description, 
+.regular_text_for_popup_item_description {
     font-size: 14px;
+}
+.text-lg, 
+.semibold_texno_text_down_navbar, 
+.bold_texno_text_footer, 
+.semibold_font_for_projects_item_title_text, 
+.regular_font_for_faq_items_descriptions, 
+.bold_font_for_tab_item_title {
+    font-size: 16px;
+}
+.text-xl, 
+.semibold_font_for_news_item_title_text, 
+.medium_text_for_big_see_more, 
+.projects_photo_button, 
+.semibold_font_for_projects_item_title_text, 
+.semibold_font_for_startups_item_title_text, 
+.medium_text_for_popup_title {
+    font-size: 20px;
+}
+.text-2xl, 
+.bold_font_for_contact_us_title, 
+.bold_font_for_faq_title, 
+.bold_font_for_tab_item_content_title {
+    font-size: 24px;
+}
+.text-3xl, 
+.semibold_font_for_banner_text, 
+.bold_font_for_news_title_text, 
+.bold_font_for_projects_title_text, 
+.semibold_font_for_news_detail_header, 
+.bold_font_for_gallery_titles, 
+.bold_font_for_contact_us_title, 
+.bold_font_for_faq_title, 
+.semibold_font_for_startup_banner_text, 
+.bold_font_for_startups_title_text, 
+.semibold_font_for_learning_banner_title, 
+.semibold_font_for_texno_learning_tab_title {
+    font-size: 28px;
+}
+.semibold_font_for_banner_text {
+    font-size: 2vw;
+}
+@media (max-width: 767px) {
+    .semibold_font_for_banner_text {
+        font-size: 5vw;
+   }
+}
+.bold_fot_for_faq_items_title {
+    font-size: 18px;
+}
+.medium_text_for_tab_item_content_card_item_title {
+    font-size: 10vh;
 }
