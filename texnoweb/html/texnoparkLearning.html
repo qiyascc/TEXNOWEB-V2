@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css">
     <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/colors.css">
@@ -22,6 +23,7 @@
             font-size: 18px;
             font-weight: bold;
         }
+
         .scrollable-row {
             display: flex;
             overflow-x: auto;
@@ -32,9 +34,11 @@
             display: inline-block;
             float: none;
         }
+
         .w-85 {
             width: 85% !important;
         }
+
         #secondary-navbar-list li {
             margin-right: 10px;
         }
@@ -61,8 +65,8 @@
                         olan vasitələrə, resurslara və biliyə sahib olmaq istəyənlər üçün ideal platformadır. Gəlin,
                         dünyanı dəyişdirəcək ideyalarınızı birlikdə həyata keçiək,.
                     </p>
-                    <!-- <a class="btn texnopark_white_text texnopark_main_background_color register_button_navbar" href="#"
-                        id="registerButton" style="padding: 12px 32px;">Qeydiyyat</a> -->
+                    <a class="btn texnopark_white_text texnopark_main_background_color register_button_navbar" href="#"
+                        id="registerButton" style="padding: 12px 32px;">Qeydiyyat</a>
                 </div>
                 <div class="col-md-5 order-1 order-md-2">
                     <img class="img-fluid mt-5 texno-learning_banner_image_left_margin"
@@ -72,29 +76,29 @@
             </div>
         </div>
 
-        <div class="mt-4 w-85 container-fluid">
+        <div class="margin_top_for_learning w-85 container-fluid">
             <div class="row align-items-center justify-content-center">
-                <h2>Texnopark Learning’de siz hangi alanları öğrenebilirsiniz?</h2>
+                <h2>Texnopark Learning’də siz hansı sahələri öyrənə bilərsiniz?</h2>
             </div>
             <div class="row row align-items-center justify-content-center">
-                <!-- HTML -->
                 <div class="secondary-navbar navbar-expand-lg bg-transparent">
                     <div class="container-fluid mt-4">
                         <div class="collapse navbar-collapse">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="secondary-navbar-list">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="secondary-navbar-list"
+                                style="border-bottom: 1px solid #888;">
                             </ul>
                         </div>
                     </div>
                 </div>
 
             </div>
-            
+
             <div class="container-fluid mt-4" id="content-area">
             </div>
         </div>
-        
-    
-        
+
+
+
 
 
 
@@ -106,6 +110,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.js"></script>
 
     <script type="text/javascript">
         const tabs = [
@@ -114,7 +119,8 @@
                 tabContentTitle: 'FrontEnd Developer olmaq',
                 description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id. Praesent lorem orci, mattis non efficitur id, ultricies vel nibh. Sed volutpat lacus vitae gravida viverra. Fusce vel tempor elit. Proin tempus,.',
                 cards: [
-                    { title: 'JavaScript qaynaq (Türkcə)', imgSrc: '../images/mainPageImages/banner/texnoBanner.png', text: 'https://www.youtube.com/watch?v=F8ucFhzSoPg&list=PLdYLIhwDacdFC-Yrz7hscxwmOpuhnMigs' },
+                    { title: 'JavaScript qaynaq (Türkcə)', imgSrc: '../images/mainPageImages/banner/texnoBanner.png', text: 'https://www.youtube.com/watch?v=F8ucFhzSoPg&list=PLdYLIhwDacdFC-Yrz7hscxwmOpuhnMigs', type: '1', link: 'https://qiyas.cc' },
+                    { title: 'JavaScript qaynaq (Türkcə)', imgSrc: '../images/mainPageImages/banner/texnoBanner.png', text: 'https://www.youtube.com/watch?v=F8ucFhzSoPg&list=PLdYLIhwDacdFC-Yrz7hscxwmOpuhnMigs', type: '2', link: 'https://qiyas.cc' },
                 ]
             },
             {
@@ -189,23 +195,47 @@
                 tab.cards.forEach(card => {
                     let truncatedText = card.text.substring(0, 20) + '...';
                     contentHtml += `
-                <div class="col-md-4 me-5">
-                    <div class="card">
-                        <img src="${card.imgSrc}" class="card-img-top" alt="${card.title}">
-                        <div class="card-body">
-                            <h5 class="card-title">${card.title}</h5>
-                            <p class="card-text">${truncatedText}</p>
-                            <a href="#" class="btn btn-primary">Davamı</a>
+                        <div class="col-md-4 me-5">
+                            <div class="card">
+                                <img src="${card.imgSrc}" class="card-img-top" alt="${card.title}">
+                                <div class="card-body">
+                                    <h5 class="card-title">${card.title}</h5>
+                                    <p class="card-text">${truncatedText}</p>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="##" class="text-decoration-none see_more_color" onclick="showPopup('${card.title}', '${card.text}', '${card.type}', '${card.link}')">Davamı ></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            `;
+                    `;
                 });
+
             }
 
             contentHtml += '</div>';
             contentArea.innerHTML = contentHtml;
         }
+        function showPopup(cardTitle, cardText, type, link) {
+            let buttonText = type == '1' ? 'Yüklə' : 'İzlə';
+            Swal.fire({
+                title: cardTitle,
+                html: `<div style="text-align: left;">${cardText}</div>`,
+                confirmButtonText: buttonText,
+                confirmButtonColor: '#0d6efd',
+                customClass: {
+                    confirmButton: 'btn btn-primary',
+                    title: 'font_size_for_au'
+                },
+                buttonsStyling: false,
+                showCloseButton: true,
+                width: '400px'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = link;
+                }
+            });
+        }
+
 
 
         tabs.forEach((tab, index) => {
@@ -214,13 +244,15 @@
 
             const link = document.createElement('a');
             link.className = 'nav-link';
-            link.href = '';
+            link.href = '##';
             link.textContent = tab.title;
             link.onclick = () => loadTab(index);
 
             listItem.appendChild(link);
             navbarList.appendChild(listItem);
         });
+
+        
         loadTab(0);
     </script>
 
